@@ -182,10 +182,25 @@
 
         <!-- Footer -->
         <footer>
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-12">
-                    <p>Мой и на Наско</p>
+                    <div class="rowFloat rowtext rowText">
+                        <h2>Нашият сайт</h2>
+                        <p>Сайтът е създаден с цел упражняване на основни техники в front-end-а.Резултата е (Добавяваме евентуалното име на сайта).В него може да разигравате срещи между вашите любими отбори и да тествате дали не сме бавноразвиващи.</p>
+                    </div>
+                <div class="rowFloat rowText ">
+                    <h2>Нашите социални мрежи: </h2>
+                    <img src="img/facebook.jpg">
+                    <img src="img/google.jpg">
+                    <img src="img/instagram.jpg">
+                    <img src="img/skype.jpg">
+                    <img src="img/youtube.jpg">
                 </div>
+            </div>
+
+
+
+
             </div>
             <!-- /.row -->
         </footer>

@@ -141,8 +141,46 @@ span.toggleRegister:hover
 }
 
 input:focus{
-	background-color:green;
+background-color: rgba(238, 9, 17, 0.6);
+color: white;
 }
+.team img{
+	width: 33.1%;
+	/*Trqbva da se izbere podhodq6ti kartinki*/
+	
+	border: white 2px outset;
+}
+.statistics label{
+	border-left:white 1px solid; 
+	color: white;
+	margin-left: 2%;
+	padding-left: 1%;
+}
+.statistics label:first-of-type{
+	border-left: none;
+	padding-left: 0px;
+
+}
+.float{
+float:left;
+
+}
+.footer{
+	color: white;
+	width: 40%;
+
+}
+.footer_image{
+	color: white;
+	width: 40%;
+}
+.footer_image img{
+float: left;	
+}
+.rowtext{
+	font-size: 20px;
+}
+
 
 
 

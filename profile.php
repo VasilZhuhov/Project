@@ -87,19 +87,143 @@
     </nav>
 
       <?php
-  echo "
-    <div class='profile'>
+  
+   
+          if($_SESSION['logged_user']['team'] == 'Arsenal')
+          {
+            echo "
+                <div class='profile'>
 
-        <img  src=".$_SESSION['logged_user']['avatar'].">
-        <div class='names'>
-       ".$_SESSION['logged_user']['first_name']."
-        ".$_SESSION['logged_user']['second_name']."
-        </div>
-        <div class='username'>
-        (".$_SESSION['logged_user']['username_sign'].")
-        </div>
-    </div>   
-    ";
+                    <img  src=".$_SESSION['logged_user']['avatar'].">
+                    <div class='names'>
+                   ".$_SESSION['logged_user']['first_name']."
+
+                    ".$_SESSION['logged_user']['second_name']."
+                    </div>
+                    <div class='username'>
+                    (".$_SESSION['logged_user']['username_sign'].")
+                    </div>
+                    <div class='statistics'>
+                        <label>Победи:  </label>
+                         <label>Отбелязани голове:  </label>
+                        <label>Допуснати голове:  </label>
+                    </div>
+                </div>   
+
+                
+
+                        
+                        <div class='team'>
+                        <img src='img/BPL_1.png'>
+                        <img src='img/BPL_1.png'>
+                        <img src='img/BPL_1.png'>
+                        </div>
+
+
+                        ";
+          }
+          if($_SESSION['logged_user']['team'] == 'Liverpool')
+          {
+            echo "
+                <div class='profile'>
+
+                    <img  src=".$_SESSION['logged_user']['avatar'].">
+                    <div class='names'>
+                   ".$_SESSION['logged_user']['first_name']."
+
+                    ".$_SESSION['logged_user']['second_name']."
+                    </div>
+                    <div class='username'>
+                    (".$_SESSION['logged_user']['username_sign'].")
+                    </div>
+                    <div class='statistics'>
+                        <label>Победи:  </label>
+                         <label>Отбелязани голове:  </label>
+                        <label>Допуснати голове:  </label>
+                    </div>
+                </div>   
+
+                
+
+                         
+                        <div class='team'>
+                        <img src='img/BPL_1.png'>
+                        <img src='img/BPL_1.png'>
+                        <img src='img/BPL_1.png'>
+                        </div>
+
+
+                        ";
+          }
+          if($_SESSION['logged_user']['team'] == 'Man City')
+          {
+            echo "
+                <div class='profile'>
+
+                    <img  src=".$_SESSION['logged_user']['avatar'].">
+                    <div class='names'>
+                   ".$_SESSION['logged_user']['first_name']."
+
+                    ".$_SESSION['logged_user']['second_name']."
+                    </div>
+                    <div class='username'>
+                    (".$_SESSION['logged_user']['username_sign'].")
+                    </div>
+                    <div class='statistics'>
+                        <label>Победи:  </label>
+                         <label>Отбелязани голове:  </label>
+                        <label>Допуснати голове:  </label>
+                    </div>
+                </div>   
+
+                
+
+                        
+                        <div class='team'>
+                        <img src='img/BPL_1.png'>
+                        <img src='img/BPL_1.png'>
+                        <img src='img/BPL_1.png'>
+                        </div>
+
+
+                        ";
+          }
+          if($_SESSION['logged_user']['team'] == 'Chelsea')
+          {
+            echo "
+                <div class='profile'>
+
+                    <img  src=".$_SESSION['logged_user']['avatar'].">
+                    <div class='names'>
+                   ".$_SESSION['logged_user']['first_name']."
+
+                    ".$_SESSION['logged_user']['second_name']."
+                    </div>
+                    <div class='username'>
+                    (".$_SESSION['logged_user']['username_sign'].")
+                    </div>
+                     <div class='statistics'>
+                        <label>Победи:  </label>
+                         <label>Отбелязани голове:  </label>
+                        <label>Допуснати голове:  </label>
+                    </div>
+
+                </div>   
+               
+                
+
+                        
+                        <div class='team'>
+                        <img src='img/stadium.jpg'>
+                        <img src='img/stadium.jpg'>
+                        <img src='img/stadium.jpg'>
+                        </div>
+
+
+                        ";
+          }
+
+
    ?>
   </body>
 

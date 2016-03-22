@@ -30,5 +30,17 @@ $(document).ready(function(){
 	});
 $('#carouselHacked').carousel();
 
- 
+  $('.username_sign').on("keyup", function(event){
+
+        //alert("sth");
+
+        $.ajax({
+            url: "/php/register_db.php",
+            type: "POST",
+            data: { username_sign: event},
+
+
+        });
+
+    });
 });

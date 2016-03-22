@@ -93,7 +93,7 @@
     <div class="gamebg">
         <!--Game menu-->
         <div class="menu">
-            <img src="../img/stadium.jpg">
+            <img src="img/stadium.jpg">
             <div class="gameButtons">
                 <input id="play" class="btn btn-danger" type="submit" value="Play">
                 <input id="" class="btn btn-danger" type="submit" value="Instructions">

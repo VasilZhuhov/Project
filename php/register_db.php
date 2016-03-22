@@ -7,6 +7,7 @@
 
 	$data = $_POST;
 	$files = $_FILES;
+	$hasError=false;
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$media_path = dirname(dirname($actual_link)) . "/media/";
 
@@ -24,21 +25,21 @@
 	
 	if(!empty($result))
 	{
-		$hasError = 1;	
+		$hasError=true;
 	}	
 	if(strlen($data['username_sign']) < 4)
 	{
-		$hasError = 1;
+		$hasError=true;
 	}
 	
 	if(strlen($data['password_sign']) < 4)
 	{
-		$hasError = 1;
+		$hasError=true;
 	}
 	
 	if($data['password_sign'] != $data['password_2'])
 	{
-		$hasError = 1;
+		$hasError=true;
 	}
 
 	$target_dir = dirname(dirname(__FILE__)) . "\media\\";
@@ -60,12 +61,12 @@
 	// Check if file already exists
 	if (file_exists($target_file)) {
 		echo "Sorry, but file exist!";
-		$hasError = 1;
+		$hasError=true;
 	}
 	// Check file size
 	if ($files["image"]["size"] > 5000000) {
 		echo "Sorry, but the file is too big";
-		$hasError = 1;
+		$hasError=true;
 	}
 	// Allow certain file formats
 	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
@@ -73,7 +74,7 @@
 		$hasError = 1;	
 	}
 	// Check if $uploadOk is set to 0 by an error
-	if ($hasError == 1) {
+	if (	$hasError == true) {
 	    echo "Sorry, your file was not uploaded.";
 	// if everything is ok, try to upload file
 	} else {
@@ -84,17 +85,24 @@
 	    }
 	}
 
-	if($hasError == 0)
+	if($hasError == false)
 	{
 		unset($data['password_2']);
 		$data['password_sign'] = md5($data['password_sign']);
 		$data['avatar'] = $media_path . $file_name;
 		$db->saveArray('users', $data);
 		header('Location: ../index.php');
-	}
-	else
-	{
-		echo "we have an error";
-	}
+       ?>
+            <!--            <img src="../Pictures/no.png" alt="">-->
+        <script>alert('e3cho');</script>
+        <?php
+    }
+    else
+    {
+        ?>
+            <!--           <img src="../Pictures/tick.png" alt="">-->
+        <script>alert('echo');</script>
+        <?php
+    }
 
 ?>
