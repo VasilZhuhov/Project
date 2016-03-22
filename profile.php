@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand navbar-brand-default" href="index.php">Kygen</a>
+                <a class="navbar-brand navbar-brand-default" href="index.php">F.A. League</a>
             </div>
             <?php
                 if(!isset($_SESSION['logged_user']))
@@ -71,8 +71,11 @@
                                 </ul>
                                     <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
                                 <div class='loginButtons'>
-                                    <a href='php/logout.php'><img class='loginButtons' src='img/logout.png' ></a>
-                                    <img class='loginButtons' src='img/profile.png' >
+                                    <a href='php/logout.php'>
+                                        <button type='button' class='btn btn-danger btn-sm'>
+                                            <span  class='glyphicon glyphicon-off'></span> Off 
+                                        </button>
+                                    </a>
                                 </div>
                         </div>
 
@@ -85,7 +88,7 @@
 
       <?php
   echo "
-    <div class='profile '>
+    <div class='profile'>
 
         <img  src=".$_SESSION['logged_user']['avatar'].">
         <div class='names'>

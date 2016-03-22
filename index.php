@@ -52,12 +52,15 @@
                 {
                     echo "
                     
-                        <div class='loginButtons'>
-                            <img class='loginButtons' src='img/edit-icon.png' id='sign'>  
-    						<img class='loginButtons' src='img/login.png' id='log'>						
-    					</div>
-                        <a class='navbar-brand navbar-brand-default' href='index.php'>Kygen</a>
-                        
+                        <div class='loginButtons'> 
+                            <button id='sign' type='button' class='btn btn-danger btn-sm'>
+                                <span class='glyphicon glyphicon-paperclip'></span> Sign in
+                            </button>					
+    					    <button id='log' type='button' class='btn btn-danger btn-sm'>
+                                 <span class='glyphicon glyphicon-log-in'></span> Log in
+                            </button>
+                        </div>
+                        <a class='navbar-brand navbar-brand-default' href='index.php'>F.A. League</a>
                     ";
                 }
                 else
@@ -66,15 +69,25 @@
                 
                         <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                             <ul class='nav navbar-nav'>
+                                <a class='navbar-brand navbar-brand-default' href='index.php'>F.A. League</a>
                                 <li>
                                     <a href='game.php'>The Game</a>
                                 </li>
                                 </ul>
                                     <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
                                 <div class='loginButtons'>
-                                    <a href='php/logout.php'><img class='loginButtons' src='img/logout.png' ></a>
-                                    <a href='profile.php'><img class='loginButtons' src='img/profile.png' ></a>
+                                <a href='profile.php'>
+                                        <button type='button' class='btn btn-danger btn-sm'>
+                                            <span  class='glyphicon glyphicon-user'></span> Profile
+                                        </button>
+                                    </a>
+                                    <a href='php/logout.php'>
+                                        <button type='button' class='btn btn-danger btn-sm'>
+                                            <span  class='glyphicon glyphicon-off'></span> Off 
+                                        </button>
+                                    </a>
                                 </div>
+
                         </div>
 
                     ";
@@ -95,22 +108,29 @@
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
+                <img src="img/project_1a.jpg">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/project_51.jpg">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
                 <img src="img/project_4.jpg">
-                <div class="carousel-caption">
-                Some 
+                <div class="carousel-caption">                   
                 </div>
             </div>
             <div class="item">
-             <img src="img/project_4.jpg">
+                <img src="img/project_5.jpg">
                 <div class="carousel-caption">
-                Random
                 </div>
             </div>
             <div class="item">
-            <img src="img/project_4.jpg">
+                <img src="img/project_3.jpg">
                 <div class="carousel-caption">
-                Text                    
-            </div>
+                </div>
             </div>
         </div>
 
@@ -135,12 +155,12 @@
 	<br><br>
     <div class="container">
 		<br>
-		<h1 class="header1">Kygen</h1>
+		<h1 class="header1">F.A. League</h1>
 		<br><br>
         <div class="row">
             <div class="col-lg-12">
 				<div class="rowFloat"><img src="img/BPL_1.png"></div>
-                <div class="rowFloat rowText"><br><p>Welcome to Football Simulator 16! Pick your favourite team from one of the best Football leagues-Barclays Premier League.</p></div>
+                <div class="rowFloat rowText"><br><p>Welcome to F.A. League! Pick your favourite team from one of the best Football leagues-Barclays Premier League.</p></div>
             </div>
         </div>
 		<br><br>

@@ -1,0 +1,75 @@
+.gamebg{
+	position:relative;
+}
+.gamebg .menu img{
+	margin-top:4%;
+	-webkit-filter: blur(2px);
+  	-moz-filter: blur(2px);
+  	-o-filter: blur(2px);
+  	-ms-filter: blur(2px);
+  	filter: blur(2px);
+  	width:100%;
+  	height:auto;
+  	position:absolute;
+ 
+}
+.gameButtons{
+	position:absolute;
+	width:25%;
+	margin-left:37.5%;
+	margin-top:20%;
+}
+.gameButtons .btn{
+	margin-bottom:3%;
+
+}
+.teamSelection{
+	display:none;
+	position:absolute;
+	width:60%;
+	margin-left:20%;
+	margin-top:12%;
+}
+.yourTeam{
+	width:30%;
+	display:inline-block;
+	float:left;
+}
+.opponent{
+	width:30%;
+	display:inline-block;		
+	float:right;
+}  
+.teamImg img{
+	width:40%;
+	margin-left:11%;
+	margin-top:5%;
+}
+.teamImg{
+	text-align:left;
+	position:absolute;
+	width:50%;
+}
+.select{
+	margin-top:100%;
+	display:inline-block;
+}
+.teamImg1 img{
+	width:40%;
+	margin-left:11%;
+	margin-top:5%;
+}
+.teamImg1{
+	text-align:left;
+	position:absolute;
+	width:50%;
+}
+.bottomButtons{
+	width:30%;
+	position:relative;
+	margin-top:37%;
+	margin-left:35%;
+}
+.bottomButtons input{
+	margin-top:3%;
+}

@@ -133,51 +133,55 @@ input:focus {
 }
 
 
-/*added by Toshko*/
+
 span.toggleRegister:hover
 {
 	cursor: pointer;
 	text-decoration: underline;
 }
 
+input:focus{
+	background-color:green;
+}
+
+
+
 @media screen and (max-width: 1200px){
 	.rowFloat{
 	width:100%;
 	float:left;
 	text-align:center;
+	}
+	.rowFloata{
+		width:100%;
+		float:left;
+		text-align:center;
+	}
+	.rowText{
+		font-size:3vw;
+		text-align:center;
+		color:#ffffff;
+	}
+	.log { 
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -12.5% 0 0 -12.5%;
+		width:40%;
+	}
+	.sign { 
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		margin: -12.5% 0 0 -12.5%;
+		width:40%;
+		height:25%;
+		z-index: 26;
+
+	}
+
+
 }
-.rowFloata{
-	width:100%;
-	float:left;
-	text-align:center;
-}
-.rowText{
-	font-size:3vw;
-	text-align:center;
-	color:#ffffff;
-}
-.log { 
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -12.5% 0 0 -12.5%;
-	width:40%;
-}
-.sign { 
-	position: absolute;
-	top: 35%;
-	left: 50%;
-	margin: -12.5% 0 0 -12.5%;
-	width:40%;
-	height:25%;
-	z-index: 26;
-
-}
-
-
-
-
-
 
 @media screen and (max-width: 600px){
 .row img{

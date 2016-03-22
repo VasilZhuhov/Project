@@ -30,3 +30,5 @@ else //if no user is found
 {
 	echo "NOOOO";	
 }
+
+// Login : POST -> url: localhost:port/login?username=admin&password=1234

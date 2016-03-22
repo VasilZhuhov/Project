@@ -17,11 +17,13 @@
 
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet"> 
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/game.css" rel="stylesheet">  
     <link rel="stylesheet" href="css/nav.css">
 	  
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript"></script>
   
 
     
@@ -33,6 +35,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/game.js"></script>
 
     <!-- Navigation -->
     <nav class="navbar  navbar-fixed-top navbar-default" role="navigation" >
@@ -45,34 +48,38 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand navbar-brand-default" href="index.php">Kygen</a>
             </div>
             <?php
                 if(!isset($_SESSION['logged_user']))
                 {
-                    echo "
-                        <div class='loginButtons'>
-                            <img class='loginButtons' src='img/edit-icon.png' id='sign'>  
-    						<img class='loginButtons' src='img/login.png' id='log'>						
-    					</div>
-                    ";
+                    
+                        header('Location: index.php');
                 }
                 else
                 {
                     echo "
                        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                             <ul class='nav navbar-nav'>
+                                <a class='navbar-brand navbar-brand-default' href='index.php'>F.A. League</a>
                                 <li>
                                     <a href='game.php'>The Game</a>
                                 </li>
                                 </ul>
                                     <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
                                 <div class='loginButtons'>
-                                    <a href='logout.php'><img class='loginButtons' src='img/logout.png' ></a>
-                                    <img class='loginButtons' src='img/profile.png' >
+                                    <a href='profile.php'>
+                                        <button type='button' class='btn btn-danger btn-sm'>
+                                            <span  class='glyphicon glyphicon-user'></span> Profile
+                                        </button>
+                                    </a>
+                                    <a href='php/logout.php'>
+                                        <button type='button' class='btn btn-danger btn-sm'>
+                                            <span  class='glyphicon glyphicon-off'></span> Off 
+                                        </button>
+                                    </a>
                                 </div>
-                        </div>
 
+                        </div>
                     ";
                 }
             ?>
@@ -82,5 +89,48 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <div class="gamebg">
+        <!--Game menu-->
+        <div class="menu">
+            <img src="../img/stadium.jpg">
+            <div class="gameButtons">
+                <input id="play" class="btn btn-danger" type="submit" value="Play">
+                <input id="" class="btn btn-danger" type="submit" value="Instructions">
+            </div>
+        </div>
+        <!--Team selection-->
+        <div>
+            <div class='teamSelection'>
+                <div class='yourTeam'>
+                    <div class='teamImg'>
+                       <img src="img/1.png" name="image-swap">
+                    </div>
+                    <select class='select' onchange="setImage(this);">
+                        <option value="img/1.png" >Arsenal</option>
+                        <option value="img/3.png" >Liverpool</option>
+                        <option value="img/4.png" >Man City</option>
+                        <option value="img/2.png" >Chelsea</option>
+                    </select>
+                </div>   
+                <div class='opponent'>
+                    <div class='teamImg1'>
+                       <img src="img/3.png" name="image-swap1">
+                    </div>
+                    <select class='select' onchange="setImage1(this);">
+                        <option value="img/1.png" >Arsenal</option>
+                        <option value="img/3.png" selected >Liverpool</option>
+                        <option value="img/4.png" >Man City</option>
+                        <option value="img/2.png" >Chelsea</option>
+                    </select>    
+                </div> 
+                <div class="bottomButtons">
+                    <input id="backToMenu" class="btn btn-danger" type="submit" value="Menu">
+                    <input id="" class="btn btn-danger" type="submit" value="Start!">
+                </div>  
+            </div>
+        </div>
+
+    </div>
   </body>
 </html>
