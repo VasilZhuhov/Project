@@ -23,7 +23,7 @@
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.12.1.min.js"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/slideshow.js"></script>
 
@@ -231,6 +231,9 @@
                 <form method="post" action="php/register_db.php" enctype="multipart/form-data">
                     <h1>Sign in</h1>
                     <input type="text" name="username_sign" placeholder="Username" required="required" onkeyup="" /><span id="correct"></span>
+                    <!--Remove Later-->
+                    <p class="removeLater">This text has to change</p>
+
                     <input type="password" name="password_sign" placeholder="Password" required="required" />
                     <input type="password" name="password_2" placeholder="Repeat Password" required="required" />
                     <input type="email" name="email" placeholder="email" required="required" />

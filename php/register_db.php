@@ -92,17 +92,11 @@
 		$data['avatar'] = $media_path . $file_name;
 		$db->saveArray('users', $data);
 		header('Location: ../index.php');
-       ?>
-            <!--            <img src="../Pictures/no.png" alt="">-->
-        <script>alert('e3cho');</script>
-        <?php
+       	echo 'no error';
     }
     else
     {
-        ?>
-            <!--           <img src="../Pictures/tick.png" alt="">-->
-        <script>alert('echo');</script>
-        <?php
+        echo 'error';
     }
 
 ?>

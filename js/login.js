@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+	//alert(1);
 
 	if($( "#logShow" ).hide()){
 		$( "#log" ).click(function() {
@@ -28,19 +28,23 @@ $(document).ready(function(){
 		$( "#logShow" ).hide();
 		$( "#signShow" ).show();
 	});
-$('#carouselHacked').carousel();
 
-  $('.username_sign').on("keyup", function(event){
+	$('#carouselHacked').carousel();
 
-        //alert("sth");
+    setInterval(function(){
+    	var data = $('#signShow input[name=username_sign]').val();
+    	//alert(data);
+	    $.ajax({
 
-        $.ajax({
-            url: "/php/register_db.php",
-            type: "POST",
-            data: { username_sign: event},
+	    	url: "../php/DeleteMeLater.php",
+	    	type: "POST",
+	    	data: {data: data},
+	    	success: function(result){
+	    		$('.removeLater').text(result);
+	    	}
+	    });
+    }, 200);
 
 
-        });
 
-    });
 });

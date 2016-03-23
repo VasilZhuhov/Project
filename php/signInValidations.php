@@ -11,19 +11,13 @@
         <script>alert('e3cho');</script>
     <?php
     $username = $_POST['username'];
-    $query = "SELECT * FROM `users` WHERE `users`.`username` = '".$user['username']."'";
+    $query = "SELECT * FROM `users` WHERE `username_sign` = '".$data['username_sign']."' ";
     $result = $db->fetchArray($query);
     if(count($result) > 0)
     {
-        ?>
-            <!--            <img src="../Pictures/no.png" alt="">-->
-        <script>alert('e3cho');</script>
-        <?php
+        echo 'error';
     }
     else
     {
-        ?>
-            <!--           <img src="../Pictures/tick.png" alt="">-->
-        <script>alert('echo');</script>
-        <?php
+        echo 'no error';
     }
