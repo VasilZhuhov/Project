@@ -109,11 +109,11 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="img/project_1a.jpg">
-                <div class="carousel-caption">
+            <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="img/project_51.jpg">
+                <img src="img/project_3.jpg">
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -123,12 +123,17 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/project_5.jpg">
+                <img src="img/project_6.jpg">
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="img/project_3.jpg">
+                <img src="img/project_51.jpg" height="1080" width="1920">
+                <div class="carousel-caption">
+                </div>
+            </div>
+             <div class="item">
+                <img src="img/project_5.jpg">
                 <div class="carousel-caption">
                 </div>
             </div>
