@@ -235,13 +235,23 @@
             <div class="sign">
                 <form method="post" action="php/register_db.php" enctype="multipart/form-data">
                     <h1>Sign in</h1>
-                    <input type="text" name="username_sign" placeholder="Username" required="required" onkeyup="" /><span id="correct"></span>
+                    <div class="white_space">
+                    <input class="n_validation" type="text" name="username_sign" placeholder="Username" required="required" onkeyup="" />
+                    <label class="name_validation">Ok</label>
+                    </div>
                     <!--Remove Later-->
-                    <p class="removeLater">This text has to change</p>
-
-                    <input type="password" name="password_sign" placeholder="Password" required="required" />
+                    <div class="white_space">
+                    <input type="password" name="password_sign" placeholder="Password" required="required" onkeyup=""/>
+                    <label class="pass_validation">Ok</label>
+                    </div>
+                    <div class="white_space">
                     <input type="password" name="password_2" placeholder="Repeat Password" required="required" />
+                    <label class="pass_2_validation">Ok</label>
+                    </div>
+                    <div class="white_space">
                     <input type="email" name="email" placeholder="email" required="required" />
+                    <label class="email_validation">Ok</label>
+                    </div>
                     <input type="text" name="first_name" placeholder="First name" required="required" />
                     <input type="text" name="second_name" placeholder="Last name" required="required" />
                     <select  name="team" >

@@ -59,15 +59,48 @@
   
 }
 
-.profile{
-  background-image: url("../img/smooth.jpg");
-  width: 100%;
-  margin-top: 3.8%;
+.profile_arsenal{
+  background-image: url("../img/arsenal-stadium.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  width: 100%;
+  color: white;
+  margin-top: 3.8%;
   font-weight: bold;
-
 }
-.profile>img{
+.profile_chelsea{
+  background-image: url("../img/chelsea-stadium.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  margin-top: 3.8%;
+  font-weight: bold;
+}
+.profile_liverpool{
+  background-image: url("../img/liverpool-stadium.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  margin-top: 3.8%;
+  font-weight: bold;
+}
+.profile_mancity{
+  background-image: url("../img/mancity-stadium.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  margin-top: 3.8%;
+  font-weight: bold;
+}
+
+.profile_arsenal>img,.profile_chelsea>img,.profile_liverpool>img,.profile_mancity>img{
   margin-top: 5%;
   margin-left: 5%;
   margin-bottom: 2%;
