@@ -38,15 +38,6 @@
     <!-- Navigation -->
     <nav class="navbar  navbar-fixed-top navbar-default" role="navigation" >
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            
-                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>-->
-               
             <?php
                 if(!isset($_SESSION['logged_user']))
                 {
@@ -102,38 +93,28 @@
     
     
 
-    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselHacked" class="carousel slide carousel-fade shadow" data-ride="carousel">
 
         <!-- Wrapper for slides -->
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="img/project_1a.jpg">
+                <img src="img/project_1a.png">
             <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="img/project_3.jpg">
+                <img src="img/project_3.png">
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
-                <img src="img/project_4.jpg">
+                <img src="img/project_4.png">
                 <div class="carousel-caption">                   
                 </div>
             </div>
-            <div class="item">
-                <img src="img/project_6.jpg">
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/project_51.jpg" height="1080" width="1920">
-                <div class="carousel-caption">
-                </div>
-            </div>
              <div class="item">
-                <img src="img/project_5.jpg">
+                <img src="img/project_51.png">
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -190,7 +171,7 @@
             <div class="row ">
                 <div class="col-lg-12">
                     <div class="rowFloat rowtext rowText">
-                        <h2>Нашият сайт</h2>
+                        <h2>F.A. League</h2>
                         <p>Сайтът е създаден с цел упражняване на основни техники в front-end-а.Резултата е (Добавяваме евентуалното име на сайта).В него може да разигравате срещи между вашите любими отбори и да тествате дали не сме бавноразвиващи.</p>
                     </div>
                 <div class="rowFloat rowText ">

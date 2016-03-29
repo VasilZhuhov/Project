@@ -1,7 +1,7 @@
 .gamebg{
 	position:relative;
 }
-.gamebg .menu img{
+.gamebg .menu .backg{
 	margin-top:4%;
 	-webkit-filter: blur(2px);
   	-moz-filter: blur(2px);
@@ -11,7 +11,26 @@
   	width:100%;
   	height:auto;
   	position:absolute;
- 
+}
+
+.menuImg{
+	position:absolute;
+	margin-top:7%;
+	margin-left:7%;
+}
+.menuImg1{
+	position:absolute;
+	margin-top:7%;
+	margin-left:70%;
+}
+.menuImg img{
+	
+	width:70%
+	
+}
+.menuImg1 img{
+	width:95%
+	
 }
 .gameButtons{
 	position:absolute;
@@ -72,4 +91,9 @@
 }
 .bottomButtons input{
 	margin-top:3%;
+}
+.change{
+	text-align:center;
+	color:rgba(217, 29, 29, 1);
+	margin-top:4%;
 }
