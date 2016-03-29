@@ -66,8 +66,8 @@ select{
 	border: none;
 	outline: none;
 	padding: 3%;
-	font-size: 13px;
-	color: #d91d1d;
+	font-size: 18px;
+	color: #800000;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	border: 1px solid #d91d1d;
 	border-radius: 4px;
@@ -144,10 +144,17 @@ input:focus{
 background-color: rgba(238, 9, 17, 0.6);
 color: white;
 }
-.team img{
+.correct:focus{
+background-color: rgba(46,230,25,0.4);
+color: white;
+border-color: white;
+}
+.team{
+	float: left;
+}
+.team img{	
 	width: 33.1%;
-	/*Trqbva da se izbere podhodq6ti kartinki*/
-	
+	height: 470px;	
 	border: white 2px outset;
 }
 .statistics label{
@@ -180,8 +187,12 @@ float: left;
 .rowtext{
 	font-size: 20px;
 }
-
-
+.white_space{
+	white-space:nowrap;
+}
+.white_space label{
+	color:#49FC96;
+}
 
 
 @media screen and (max-width: 1200px){

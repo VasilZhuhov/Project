@@ -92,7 +92,7 @@
           if($_SESSION['logged_user']['team'] == 'Arsenal')
           {
             echo "
-                <div class='profile'>
+                <div class='profile_arsenal'>
 
                     <img  src=".$_SESSION['logged_user']['avatar'].">
                     <div class='names'>
@@ -125,7 +125,7 @@
           if($_SESSION['logged_user']['team'] == 'Liverpool')
           {
             echo "
-                <div class='profile'>
+                <div class='profile_liverpool'>
 
                     <img  src=".$_SESSION['logged_user']['avatar'].">
                     <div class='names'>
@@ -158,7 +158,7 @@
           if($_SESSION['logged_user']['team'] == 'Man City')
           {
             echo "
-                <div class='profile'>
+                <div class='profile_mancity'>
 
                     <img  src=".$_SESSION['logged_user']['avatar'].">
                     <div class='names'>
@@ -191,7 +191,8 @@
           if($_SESSION['logged_user']['team'] == 'Chelsea')
           {
             echo "
-                <div class='profile'>
+            
+                <div class='profile_chelsea'>
 
                     <img  src=".$_SESSION['logged_user']['avatar'].">
                     <div class='names'>
@@ -209,6 +210,7 @@
                     </div>
 
                 </div>   
+
                
                 
 
