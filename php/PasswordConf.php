@@ -8,8 +8,8 @@ if(strlen($password_2) == 0)
     exit;
 }
 if(strcmp($password_1, $password_2) != 0)
-    {
-        $error = 'Its not like the password';
-        echo $error;
-        exit;
-    }
+{
+    $error = 'Its not like the password';
+    echo $error;
+    exit;
+}

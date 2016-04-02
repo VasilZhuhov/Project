@@ -45,8 +45,6 @@
 	{
 		$error ='This username is already taken';
 		echo $error;
-		exit;		
+		exit;
 	}
-
-	
 ?>

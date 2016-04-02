@@ -6,9 +6,9 @@ if(strlen($email) == 0)
         echo $error;
         exit;
     }
-if(!preg_match('/^(?=.{4})(?!.{21})[^\W]*[a-z][^\W]*$/i', $email))
-    {
-        $error ='Nop no stupid simvols ';
-        echo $error;
-        exit;
-    }
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
+{
+  $error = "Its not real email"; 
+  echo $error;
+  exit;
+}

@@ -19,17 +19,13 @@
     <link href="css/half-slider.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet"> 
     <link rel="stylesheet" href="css/nav.css">
-	<script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.12.1.min.js"> </script>
+	<script src="js/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/slideshow.js"></script>
-
-  
-
-    
+s    
 </head>
 
 <body>
@@ -195,11 +191,11 @@
                     </div>
                 <div class="rowFloat rowText ">
                     <h2>Нашите социални мрежи: </h2>
-                    <img src="img/facebook.jpg">
-                    <img src="img/google.jpg">
-                    <img src="img/instagram.jpg">
-                    <img src="img/skype.jpg">
-                    <img src="img/youtube.jpg">
+                    <a class="facebook" href="#"></a>
+                    <a class="google" href="#"></a> 
+                    <a class="instagram" href="#"></a>  
+                    <a class="skype" href="#"></a>
+                    <a class="youtube" href="#"></a>
                 </div>
             </div>
 
@@ -233,35 +229,44 @@
         </div>  
         <div>
             <div class="sign">
-                <form method="post" action="php/register_db.php" enctype="multipart/form-data">
+                <form id="signup" method="post" action="php/register_db.php" enctype="multipart/form-data">
                     <h1>Sign in</h1>
                     <div class="white_space">
-                    <input class="n_validation" type="text" name="username_sign" placeholder="Username" required="required" onkeyup="" />
-                    <label class="name_validation">Ok</label>
+                    <input class="validation" type="text" name="username_sign" placeholder="Username" required="required" onkeyup="" />
+                    <label class="validation-info"></label>
                     </div>
                     <!--Remove Later-->
                     <div class="white_space">
-                    <input type="password" name="password_sign" placeholder="Password" required="required" onkeyup=""/>
-                    <label class="pass_validation">Ok</label>
+                    <input class="validation" type="password" name="password_sign" placeholder="Password" required="required" onkeyup=""/>
+                    <label class="validation-info"></label>
                     </div>
                     <div class="white_space">
-                    <input type="password" name="password_2" placeholder="Repeat Password" required="required" />
-                    <label class="pass_2_validation">Ok</label>
+                    <input class="validation" type="password" name="password_2" placeholder="Repeat Password" required="required" />
+                    <label class="validation-info"></label>
                     </div>
                     <div class="white_space">
-                    <input type="email" name="email" placeholder="email" required="required" />
-                    <label class="email_validation">Ok</label>
+                    <input class="validation" type="email" name="email" placeholder="email" required="required" />
+                    <label class="validation-info"></label>
                     </div>
-                    <input type="text" name="first_name" placeholder="First name" required="required" />
-                    <input type="text" name="second_name" placeholder="Last name" required="required" />
-                    <select  name="team" >
+                    <div class="white_space">
+                    <input class="validation" type="text" name="first_name" placeholder="First name" required="required" />
+                    <label class="validation-info"></label>
+                    </div>
+                    <div class="white_space">
+                    <input class="validation" type="text" name="second_name" placeholder="Last name" required="required" />
+                    <label class="validation-info"></label>
+                    </div>
+                    <select name="team" >
                         <option value="Arsenal" selected>Arsenal</option>
                         <option value="Liverpool" >Liverpool</option>
                         <option value="Man City" >Man City</option>
                         <option value="Chelsea" >Chelsea</option>
                     </select>
-                    <input type="file" name="image">
-                    <input class="btn btn-danger" type="submit" value="Sign now!">
+                    <div class="white_space">
+                    <input class="validation" type="file" name="image">
+                    <label class="validation-info"></label>
+                    </div>
+                    <input class="btn btn-danger ivan" type="submit" value="Sign now!">
                 </form>
             </div>
         </div>
