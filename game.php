@@ -114,10 +114,10 @@
                        <img id='mainImg' src="img/1.png">
                     </div>
                     <select class='select'>
-                        <option class='changeImg' value="Arsenal" data-href='img/1.png' href='ATT:81 MID:79 DEF:76' selected>Arsenal</option>
-                        <option class='changeImg' value="Liverpool" data-href='img/3.png'  href='ATT:77 MID:77 DEF:79'>Liverpool</option>
-                        <option class='changeImg' value="Man City" data-href='img/4.png'  href='ATT:81 MID:81 DEF:81'>Manchester City</option>
-                        <option class='changeImg' value="Chelsea" data-href='img/2.png'  href='ATT:83 MID:82 DEF:81'>Chelsea</option>
+                        <option class='changeImg' value="Arsenal" data-href='img/1.png' data-stats='ATT:81 MID:79 DEF:76' selected>Arsenal</option>
+                        <option class='changeImg' value="Liverpool" data-href='img/3.png'  data-stats='ATT:77 MID:77 DEF:79'>Liverpool</option>
+                        <option class='changeImg' value="Man City" data-href='img/4.png'  data-stats='ATT:81 MID:81 DEF:81'>Manchester City</option>
+                        <option class='changeImg' value="Chelsea" data-href='img/2.png'  data-stats='ATT:83 MID:82 DEF:81'>Chelsea</option>
                     </select>
                         <p id='mainStat' class='change'>ATT:81 MID:79 DEF:76</p>
                 </div>   
@@ -126,10 +126,10 @@
                        <img src="img/3.png" id='mainImg1'>
                     </div>
                     <select class='select'>
-                        <option class='changeImg1' value="Arsenal" data-href='img/1.png' href='ATT:81 MID:79 DEF:76'>Arsenal</option>
-                        <option class='changeImg1' value="Liverpool" data-href='img/3.png' href='ATT:77 MID:77 DEF:79' selected>Liverpool</option>
-                        <option class='changeImg1' value="Man City" data-href='img/4.png' href='ATT:81 MID:81 DEF:81'>Manchester City</option>
-                        <option class='changeImg1' value="Chelsea" data-href='img/2.png' href='ATT:83 MID:82 DEF:81'>Chelsea</option>
+                        <option class='changeImg1' value="Arsenal" data-href='img/1.png' data-stats='ATT:81 MID:79 DEF:76'>Arsenal</option>
+                        <option class='changeImg1' value="Liverpool" data-href='img/3.png' data-stats='ATT:77 MID:77 DEF:79' selected>Liverpool</option>
+                        <option class='changeImg1' value="Man City" data-href='img/4.png' data-stats='ATT:81 MID:81 DEF:81'>Manchester City</option>
+                        <option class='changeImg1' value="Chelsea" data-href='img/2.png' data-stats='ATT:83 MID:82 DEF:81'>Chelsea</option>
                     </select>  
                     <p id='mainStat1' class='change'>ATT:77 MID:77 DEF:79</p>  
                 </div> 

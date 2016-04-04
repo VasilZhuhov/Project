@@ -21,7 +21,7 @@ $(document).ready(function(){
         elements[i].addEventListener('click',function(){
             
             var newUrl = this.getAttribute('data-href');
-            var newStat = this.getAttribute('href');
+            var newStat = this.getAttribute('data-stats');
             document.getElementById('mainImg').src = newUrl;
             document.getElementById('mainStat').innerHTML = newStat;
           
@@ -35,7 +35,7 @@ $(document).ready(function(){
         elements[i].addEventListener('click',function(){
             
             var newUrl = this.getAttribute('data-href');
-            var newStat = this.getAttribute('href');
+            var newStat = this.getAttribute('data-stats');
             document.getElementById('mainImg1').src = newUrl;
             document.getElementById('mainStat1').innerHTML = newStat;
           
