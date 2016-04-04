@@ -48,6 +48,7 @@
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 	// Check if image file is a actual image or fake image
+	
 	if(isset($_POST["submit"])) {
 	    $check = getimagesize($files["image"]["tmp_name"]);
 	    if($check !== false) {
@@ -58,6 +59,7 @@
 	        $uploadOk = 0;
 	    }
 	}
+	
 	// Check if file already exists
 	if (file_exists($target_file)) {
 		echo "Sorry, but file exist!";
