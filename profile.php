@@ -103,21 +103,33 @@
                     <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
                     </div>
-                    <div class='statistics'>
-                        <label>Победи:  </label>
-                         <label>Отбелязани голове:  </label>
-                        <label>Допуснати голове:  </label>
-                    </div>
                 </div>   
 
-                
+                            <div class='team'>
+                            <div class='statistics'>
+                            <div class='wins'>
+                            <label>Победи  </label>
+                             </div>
+                             <div class='stat'>
+                            <label>0</label>
+                            </div>
+                            <div class='wins'>
+                             <label>Отбелязани голове  </label>
+                             </div>
+                             <div class='stat'>
+                             <label>0</label>
+                             </div>
+                            <div class='wins'>
+                            <label>Допуснати голове  </label>
+                            </div>
+                            <div class='stat'>
+                             <label>0</label>
+                             </div>
+                        </div>   
+
 
                         
-                        <div class='team'>
-                        <img src='img/BPL_1.png'>
-                        <img src='img/BPL_1.png'>
-                        <img src='img/BPL_1.png'>
-                        </div>
+                     
 
 
                         ";
@@ -136,22 +148,35 @@
                     <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
                     </div>
-                    <div class='statistics'>
-                        <label>Победи:  </label>
-                         <label>Отбелязани голове:  </label>
-                        <label>Допуснати голове:  </label>
-                    </div>
+                   
                 </div>   
+
+              <div class='team'>
+                            <div class='statistics'>
+                            <div class='wins'>
+                            <label>Победи  </label>
+                             </div>
+                             <div class='stat'>
+                            <label>0</label>
+                            </div>
+                            <div class='wins'>
+                             <label>Отбелязани голове  </label>
+                             </div>
+                             <div class='stat'>
+                             <label>0</label>
+                             </div>
+                            <div class='wins'>
+                            <label>Допуснати голове  </label>
+                            </div>
+                            <div class='stat'>
+                             <label>0</label>
+                             </div>
+                        </div>   
 
                 
 
                          
-                        <div class='team'>
-                        <img src='img/BPL_1.png'>
-                        <img src='img/BPL_1.png'>
-                        <img src='img/BPL_1.png'>
-                        </div>
-
+                    
 
                         ";
           }
@@ -169,21 +194,34 @@
                     <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
                     </div>
-                    <div class='statistics'>
-                        <label>Победи:  </label>
-                         <label>Отбелязани голове:  </label>
-                        <label>Допуснати голове:  </label>
-                    </div>
-                </div>   
+                    
+                </div>
 
+              <div class='team'>
+                            <div class='statistics'>
+                            <div class='wins'>
+                            <label>Победи  </label>
+                             </div>
+                             <div class='stat'>
+                            <label>0</label>
+                            </div>
+                            <div class='wins'>
+                             <label>Отбелязани голове  </label>
+                             </div>
+                             <div class='stat'>
+                             <label>0</label>
+                             </div>
+                            <div class='wins'>
+                            <label>Допуснати голове  </label>
+                            </div>
+                            <div class='stat'>
+                             <label>0</label>
+                             </div>
+                        </div>   
                 
 
                         
-                        <div class='team'>
-                        <img src='img/BPL_1.png'>
-                        <img src='img/BPL_1.png'>
-                        <img src='img/BPL_1.png'>
-                        </div>
+                        
 
 
                         ";
@@ -203,23 +241,38 @@
                     <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
                     </div>
-                     <div class='statistics'>
-                        <label>Победи:  </label>
-                         <label>Отбелязани голове:  </label>
-                        <label>Допуснати голове:  </label>
-                    </div>
+                     
 
                 </div>   
 
                
                 
 
-                        
-                        <div class='team'>
-                        <img src='img/stadium.jpg'>
-                        <img src='img/stadium.jpg'>
-                        <img src='img/stadium.jpg'>
-                        </div>
+                   <div class='team'>
+                            <div class='blackboard'>    
+                            <div class='statistics'>
+                            <div class='wins'>
+                            <label>Победи  </label>
+                             </div>
+                             <div class='stat'>
+                            <label>0</label>
+                            </div>
+                            <div class='wins'>
+                             <label>Отбелязани голове  </label>
+                             </div>
+                             <div class='stat'>
+                             <label>0</label>
+                             </div>
+                            <div class='wins'>
+                            <label>Допуснати голове  </label>
+                            </div>
+                            <div class='stat'>
+                             <label>0</label>
+                             </div>
+                        </div>      
+                        </div> 
+                         
+
 
 
                         ";
