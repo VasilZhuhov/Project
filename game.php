@@ -1,5 +1,4 @@
 <?php 
-    session_start(); 
 
     require_once('php/db.class.php');
 
@@ -18,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>Game</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -135,7 +134,7 @@
                                 $isSelected = '';
                             }
                 ?>
-                        <option class='changeImg' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
+                            <option class='changeImg' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
                           <?php
                      
                         }
@@ -149,7 +148,7 @@
                     <div class='teamImg1'>
                        <img src="img/2.png" id='mainImg1'>
                     </div>
-                   <select id='select1' name='team2' class='select'>
+                    <select id='select1' name='team2' class='select'>
                         <?php 
                             foreach($teams as $key=>$team)
                                 {
@@ -162,7 +161,7 @@
                                         $isSelected = '';
                                     }
                         ?>
-                    <option class='changeImg1' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
+                        <option class='changeImg1' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
                         <?php
                             }
                         ?>
@@ -170,7 +169,7 @@
                     <p class='change'>ATT:<span id='attTeam2'>77</span> MID:<span id='midTeam2'>77</span> DEF:<span id='defTeam2'>79</span></p>  
                 </div>
                 <div class="bottomButtons">
-                    <input id="" class="btn btn-danger" type="submit" value="Start!">  
+                    <input class="btn btn-danger" type="submit" value="Start!">  
                     <input id="backToMenu" class="btn btn-danger" value="Menu">
                 </div>  
             </div>

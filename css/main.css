@@ -1,3 +1,10 @@
+body 
+{
+	background-image: url("../img/background1.png");
+    background-repeat: repeat;
+    font-family:Fertigo;
+    
+}
 .gamebg{
 	position:relative;
 }
