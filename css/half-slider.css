@@ -55,6 +55,7 @@ border-bottom: 2px solid white;
     .carousel-inner,
     .carousel-inner .item {
       height: auto;
+      margin-top:0.49%;
     }
 
  .overlay{

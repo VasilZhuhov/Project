@@ -26,25 +26,7 @@ require_once('db.class.php');
 $query = 'select * from teams';
 
 $teams = $db->fetchArray($query);
-/*
-$query = 'select * from teams where id='.$_POST['team1_$team[id]'];
 
-$team1 = $db->fetchArray($query);
-
-$query = 'select * from teams where id='.$_POST['team_2_id'];
-
-$team2 = $db->fetchArray($query);
-
-$team1 = array(0 => array('id'=>'','name','att','def','mid'));
-$team2 = array(0 => array('id'=>'','name','att','def','mid'));
-echo "<pre>";
-print_r ($team1);
-
-if($team1[0]['mid'] > $team2[0]['mid'] )
-{
-	
-}
-*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,91 +38,49 @@ if($team1[0]['mid'] > $team2[0]['mid'] )
 	</head>
 	
 	<body>
-
-
-	
-                 <form method="post" action="teams.php">
-					<select id='select' name="team1">
-                     
-                     <?php 
-                     
-                     
-                     foreach($teams as $key=>$team)
-					 {
-					 	if($key == 0)
-						{
-							$isSelected = " selected ";
-						}	
+		 <form method="post" action="aftermatch.php">
+			<select id='select' name="team1">
+                <?php 
+                  	foreach($teams as $key=>$team)
+					 	{
+					 		if($key == 0)
+							{
+								$isSelected = " selected ";
+							}	
 						else
-						{
+							{
 							$isSelected = '';
-						}
-					 ?>
+							}
+				?>
                      
-                        <option class='changeImg' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
-                    
-					 <?php
+                    <option class='changeImg' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
+                    <?php
 					 
-					 }
+						}
 					 
-					 ?>
-                    
-                   
+					?>
                     </select>
-                   
-                   	<script>
-                   		
-                   		/*alert($("#select option:selected").attr('data-att'));
-                   		alert($("#select option:selected").attr('data-def'));*/
-                   		
-                   		
-                   	</script>
-                  
-                     <select id='select1' name='team2'>
-                      <?php 
-                     
-                     
-                     foreach($teams as $key=>$team)
-					 {
-					 	if($key == 1)
-						{
-							$isSelected = " selected ";
-						}	
-						else
-						{
-							$isSelected = '';
-						}
-					 ?>
-                     
-                        <option class='changeImg1' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
-                    
-					 <?php
-					 
-					 }
-					 
-					 ?>
-                       
-                     </select>  
-                    <input type='submit' name='submit' value'Get teams info'>
-                    </form>
-                    <br>
-		<!-- <div class='team'>
-			<span>team1</span>
-			<div class='result1' id='chances1'>
-				<span class='stat1'>0</span>
-			</div>
-		</div>
-		<div class='team op'>
-			<span>team2</span>
-			<div class='result2' id='chances2'>
-				<span class='stat2'>0</span>
-			</div>
-		</div>
-
-		<br>
-		<button type="button" id='Simulate' value='Play'>Play</button>
-		<br>
-		time<div id='timer'>0</div> -->
+                    <select id='select1' name='team2'>
+                		<?php 
+                    		foreach($teams as $key=>$team)
+					 			{
+					 				if($key == 1)
+									{
+										$isSelected = " selected ";
+									}	
+									else
+									{
+										$isSelected = '';
+									}
+						?>
+                    <option class='changeImg1' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
+                		<?php
+					 		}
+						?>
+                  	</select>  
+                <input type='submit' name='submit' value'Get teams info'>
+       	</form>
+        <br>
 	</body>
 	
 </html>
