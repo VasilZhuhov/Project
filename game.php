@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php 
+    session_start(); 
+
+    require_once('php/db.class.php');
+
+    $query = 'select * from teams';
+
+    $teams = $db->fetchArray($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,29 +121,57 @@
                     <div class='teamImg'>
                        <img id='mainImg' src="img/1.png">
                     </div>
-                    <select class='select'>
-                        <option class='changeImg' value="Arsenal" data-href='img/1.png' data-stats='ATT:81 MID:79 DEF:76' selected>Arsenal</option>
-                        <option class='changeImg' value="Liverpool" data-href='img/3.png'  data-stats='ATT:77 MID:77 DEF:79'>Liverpool</option>
-                        <option class='changeImg' value="Man City" data-href='img/4.png'  data-stats='ATT:81 MID:81 DEF:81'>Manchester City</option>
-                        <option class='changeImg' value="Chelsea" data-href='img/2.png'  data-stats='ATT:83 MID:82 DEF:81'>Chelsea</option>
-                    </select>
-                        <p id='mainStat' class='change'>ATT:81 MID:79 DEF:76</p>
+                    <form method="post" action="game/aftermatch.php">
+                        <select id='select' name="team1" class='select'>
+                        <?php 
+                            foreach($teams as $key=>$team)
+                            {
+                                if($key == 0)
+                            {
+                                $isSelected = " selected ";
+                            }   
+                            else
+                            {
+                                $isSelected = '';
+                            }
+                ?>
+                        <option class='changeImg' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
+                          <?php
+                     
+                        }
+                     
+                    ?>
+                    </select> 
+
+                    <p class='change'>ATT:<span id='attTeam1'>81</span> MID:<span id='midTeam1'>79</span> DEF:<span id='defTeam1'>76</span></p>
                 </div>   
                 <div class='opponent'>
                     <div class='teamImg1'>
-                       <img src="img/3.png" id='mainImg1'>
+                       <img src="img/2.png" id='mainImg1'>
                     </div>
-                    <select class='select'>
-                        <option class='changeImg1' value="Arsenal" data-href='img/1.png' data-stats='ATT:81 MID:79 DEF:76'>Arsenal</option>
-                        <option class='changeImg1' value="Liverpool" data-href='img/3.png' data-stats='ATT:77 MID:77 DEF:79' selected>Liverpool</option>
-                        <option class='changeImg1' value="Man City" data-href='img/4.png' data-stats='ATT:81 MID:81 DEF:81'>Manchester City</option>
-                        <option class='changeImg1' value="Chelsea" data-href='img/2.png' data-stats='ATT:83 MID:82 DEF:81'>Chelsea</option>
+                   <select id='select1' name='team2' class='select'>
+                        <?php 
+                            foreach($teams as $key=>$team)
+                                {
+                                    if($key == 1)
+                                    {
+                                        $isSelected = " selected ";
+                                    }   
+                                    else
+                                    {
+                                        $isSelected = '';
+                                    }
+                        ?>
+                    <option class='changeImg1' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
+                        <?php
+                            }
+                        ?>
                     </select>  
-                    <p id='mainStat1' class='change'>ATT:77 MID:77 DEF:79</p>  
-                </div> 
+                    <p class='change'>ATT:<span id='attTeam2'>77</span> MID:<span id='midTeam2'>77</span> DEF:<span id='defTeam2'>79</span></p>  
+                </div>
                 <div class="bottomButtons">
                     <input id="" class="btn btn-danger" type="submit" value="Start!">  
-                    <input id="backToMenu" class="btn btn-danger" type="submit" value="Menu">
+                    <input id="backToMenu" class="btn btn-danger" value="Menu">
                 </div>  
             </div>
         </div>

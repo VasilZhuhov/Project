@@ -21,9 +21,13 @@ $(document).ready(function(){
         elements[i].addEventListener('click',function(){
             
             var newUrl = this.getAttribute('data-href');
-            var newStat = this.getAttribute('data-stats');
+            var newAtt = this.getAttribute('data-att');
+            var newMid = this.getAttribute('data-mid');
+            var newDef = this.getAttribute('data-def');
             document.getElementById('mainImg').src = newUrl;
-            document.getElementById('mainStat').innerHTML = newStat;
+            document.getElementById('attTeam1').innerHTML = newAtt;
+            document.getElementById('midTeam1').innerHTML = newMid;
+            document.getElementById('defTeam1').innerHTML = newDef;
           
         });
     }   
@@ -35,11 +39,13 @@ $(document).ready(function(){
         elements[i].addEventListener('click',function(){
             
             var newUrl = this.getAttribute('data-href');
-            var newStat = this.getAttribute('data-stats');
+            var newAtt = this.getAttribute('data-att');
+            var newMid = this.getAttribute('data-mid');
+            var newDef = this.getAttribute('data-def');
             document.getElementById('mainImg1').src = newUrl;
-            document.getElementById('mainStat1').innerHTML = newStat;
-          
-    
+            document.getElementById('attTeam2').innerHTML = newAtt;
+            document.getElementById('midTeam2').innerHTML = newMid;
+            document.getElementById('defTeam2').innerHTML = newDef;
         });
     }   
    
