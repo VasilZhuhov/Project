@@ -1,5 +1,5 @@
 <?php
-require_once('../php/db.class.php');
+require_once('db.class.php');
 
 $query = 'select * from teams';
 

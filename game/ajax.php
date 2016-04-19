@@ -5,14 +5,14 @@ require_once('teams.php');
 ?>
 <html>
 <head>
-	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
 </head>
 <script type="text/javascript">
 var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/minPHP.php",
+			url: "../php/actions/minPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -32,7 +32,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team1goalPHP.php",
+			url: "../php/actions/team1goalPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -55,7 +55,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team2goalPHP.php",
+			url: "../php/actions/team2goalPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -78,7 +78,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team1shotsPHP.php",
+			url: "../php/actions/team1shotsPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -101,7 +101,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team2shotsPHP.php",
+			url: "../php/actions/team2shotsPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -124,7 +124,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team1savesPHP.php",
+			url: "../php/actions/team1savesPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -147,7 +147,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team2savesPHP.php",
+			url: "../php/actions/team2savesPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -170,7 +170,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team1missPHP.php",
+			url: "../php/actions/team1missPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -193,7 +193,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team2missPHP.php",
+			url: "../php/actions/team2missPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -216,7 +216,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team1wastedPHP.php",
+			url: "../php/actions/team1wastedPHP.php",
 			type: "POST",
 			data: 
 			{
@@ -239,7 +239,7 @@ var i = 0;
 	setInterval(function()
 	{
 		$.ajax({
-			url: "actions/team2wastedPHP.php",
+			url: "../php/actions/team2wastedPHP.php",
 			type: "POST",
 			data: 
 			{

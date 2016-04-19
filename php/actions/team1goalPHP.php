@@ -1,6 +1,6 @@
 <?php 
 
-	require_once('db.class.php');
+	require_once('../db.class.php');
 
 	$goalTeam1 = $_POST['goalTeam1'];
 	$g1 = $_POST['g1'] + 1;
