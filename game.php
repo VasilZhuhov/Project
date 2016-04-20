@@ -12,11 +12,11 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Game</title>
 
     <!-- Bootstrap Core CSS -->
@@ -25,10 +25,9 @@
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/game.css" rel="stylesheet">  
+      
     <link rel="stylesheet" href="css/nav.css">
-	  
-
+    <link href="css/game.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script type="text/javascript"></script>
   
@@ -72,7 +71,6 @@
                                     <a href='game.php'>The Game</a>
                                 </li>
                                 </ul>
-                                    <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
                                 <div class='loginButtons'>
                                     <a href='profile.php'>
                                         <button type='button' class='btn btn-danger btn-sm'>
@@ -100,7 +98,6 @@
     <div class="gamebg">
         <!--Game menu-->
         <div class="menu">
-            <img class='backg' src="img/stadium.jpg">
             <div class='menuImg'>
                <img src='img/cou.png'>
             </div>
@@ -109,8 +106,43 @@
             </div>
             <div class="gameButtons">
                 <input id="play" class="btn btn-danger" type="submit" value="Play">
-                <input id="" class="btn btn-danger" type="submit" value="Instructions">
-                <input id="" class="btn btn-danger" type="submit" value="Team stats">
+                <input id="instructions" class="btn btn-danger" type="submit" value="Instructions">
+                <input id="stats" class="btn btn-danger" type="submit" value="Team stats">
+            </div> 
+        </div>
+        <!--Instructions-->
+        <div class='instructions'>
+            <div class='board'>
+                <p class='textIns'>Welcome to F. A. league game. To play this game you have to click on the "Play" button in the start Menu, then choose 2 teams from the select options. The team on the left is your team and the team on the right side is going to be your opponent. After finishing your selection click "Start!" and watch the match minute by minute with live statistics update!<br>Enjoy the game!</p>
+            </div>
+            <div class="insButton">
+                <input id="Menu" type='submit' class="btn btn-danger" value="Menu">
+            </div>
+        </div>
+        <!--Stats-->
+        <div class='stats'>
+            <div class='line1'>
+                <div class='arsenal'>
+                    <img src='img/1.png'>
+                    <p></p>
+                </div>
+                <div class='liverpool'>
+                    <img src='img/2.png'>
+                    <p></p>
+                </div>
+            </div>
+            <div class='line2'>
+                <div class='manCity'>
+                    <img src='img/3.png'>
+                    <p></p>
+                </div>
+                <div class='chelsea'>
+                    <img src='img/4.png'>
+                    <p></p>
+                </div>
+            </div>
+            <div class="statButton">
+                <input id="toMenu" type='submit' class="btn btn-danger" value="Menu">
             </div>
         </div>
         <!--Team selection-->
@@ -124,21 +156,20 @@
                         <select id='select' name="team1" class='select'>
                         <?php 
                             foreach($teams as $key=>$team)
-                            {
+                            {   
                                 if($key == 0)
-                            {
-                                $isSelected = " selected ";
-                            }   
-                            else
-                            {
-                                $isSelected = '';
-                            }
-                ?>
+                                {
+                                     $isSelected = " selected ";
+                                }   
+                                else
+                                {
+                                    $isSelected = '';
+                                }
+                        ?>
                             <option class='changeImg' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
                           <?php
-                     
                         }
-                     
+                       
                     ?>
                     </select> 
 
@@ -160,8 +191,8 @@
                                     {
                                         $isSelected = '';
                                     }
-                        ?>
-                        <option class='changeImg1' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected?> > <?php echo $team['name']?></option>
+                                ?>
+                        <option class='changeImg1' value="<?php echo $team['id']?>" data-href='img/<?php echo $team['id']?>.png' data-att='<?php echo $team['att']?>' data-mid='<?php echo $team['mid']?>' data-def='<?php echo $team['def']?>' <?php echo $isSelected ?> > <?php echo $team['name']?></option>
                         <?php
                             }
                         ?>
@@ -169,8 +200,9 @@
                     <p class='change'>ATT:<span id='attTeam2'>77</span> MID:<span id='midTeam2'>77</span> DEF:<span id='defTeam2'>79</span></p>  
                 </div>
                 <div class="bottomButtons">
-                    <input class="btn btn-danger" type="submit" value="Start!">  
-                    <input id="backToMenu" class="btn btn-danger" value="Menu">
+                    <input class="btn btn-danger" id='check' type="submit" value="Start!"> 
+                </form> 
+                    <input id="backToMenu" type='submit' class="btn btn-danger" value="Menu">
                 </div>  
             </div>
         </div>
