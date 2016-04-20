@@ -250,13 +250,10 @@ float: left;
 	color:#49FC96;
 }
 .scoreboard{
-	background-image:url("../img/blackboard.jpg" );
-	background-attachment: center;
-	background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover; 
-    width: 100%;
-    padding-bottom: 15%;
+	background: url("../img/blackboard.jpg") center center  no-repeat fixed;
+	padding-bottom: 15%;
+
+
 }
 .wins label{
 	margin-left: 3.5%;
