@@ -168,7 +168,7 @@ s
                 <div class="col-lg-12">
                     <div class="rowFloat rowtext rowText">
                         <h2>F.A. League</h2>
-                        <p>Сайтът е създаден с цел упражняване на основни техники в front-end-а.Резултата е (Добавяваме евентуалното име на сайта).В него може да разигравате срещи между вашите любими отбори и да тествате дали не сме бавноразвиващи.</p>
+                        <p>The web was created by 2 students to test their front-end and back-end skills. After a successful registration, the user can log in and play football simulator game.</p>
                     </div>
                 <div class="rowFloat rowText ">
                     <h2>Нашите социални мрежи: </h2>

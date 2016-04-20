@@ -44,15 +44,6 @@ $missedShotTeam2 = ($team1[0][3]/4);
 $team1GK = $team1[0][4];
 $team2GK = $team2[0][4];
 
-$savesTeam1 = 0;
-$savesTeam2 = 0;
-
-$missesT1 = 0;
-$missesT2 = 0;
-
-$shotsT1 = 0;
-$shotsT2 = 0;
-
 $min = 0;
 
 $data = ["id"=> NULL, "match_id"=> $match_id, "minute"=> 0, "action_id"=> 0, "team_id"=> 0];
@@ -80,7 +71,6 @@ while($min <= 89)
 					{
 						$data["action_id"] = 3;
 						$newMin = $db->saveArray("minutes", $data);
-						$missesT1++;
 					
 					}
 					else
@@ -122,7 +112,6 @@ while($min <= 89)
 						{
 							$data["action_id"] = 3;
 							$newMin = $db->saveArray("minutes", $data);
-							$missesT2++;
 						}
 						else
 						{

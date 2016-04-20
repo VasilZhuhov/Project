@@ -7,7 +7,7 @@ require_once('ajax.php');
 <html>
 	<head>
 		<link href="../css/bootstrap.css" rel="stylesheet"> 
-		<link href="../css/main.css" rel="stylesheet">
+		<link href="../css/aftermatch.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-1.12.1.min.js"> </script> 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +46,6 @@ require_once('ajax.php');
                                     <a href='../game.php'>The Game</a>
                                 </li>
                                 </ul>
-                                    <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
                                 <div class='loginButtons'>
                                     <a href='../profile.php'>
                                         <button type='button' class='btn btn-danger btn-sm'>
@@ -105,7 +104,7 @@ require_once('ajax.php');
                 	<div class='shots'>Shots</div>
                 	<div class='saves'>Saves</div>
                 	<div class='misses'>Misses</div>
-                    <div class='wastes'>Wasted oppurtunities</div>
+                    <div class='wastes'>Wasted opportunities</div>
                 </div>  
                 <div class='opponent'>
                     <div class='teamImg1'>
@@ -126,22 +125,6 @@ require_once('ajax.php');
                 </div> 
             </div>
         </div> 
-
-
-
-
-
-	<!--  <div class='teams'> -->
-			<!-- <img class='backg' src="img/stadium.jpg"> -->
-				<!-- <div class='result'>
-					<div class='teamImg'>
-					<?php echo $team1[0][0]?>
-					</div>
-					<div class='min' id='min'>0</div>
-					<div class='teamImg1'>
-					<?php echo $team2[0][0]?>
-					</div>
-				</div> -->
 		</div> 
 	</body>
 </html>

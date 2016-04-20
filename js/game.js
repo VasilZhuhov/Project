@@ -13,6 +13,30 @@ $(document).ready(function(){
         $( '.menuImg1' ).show();
         
     });
+    $('#instructions').click(function(){
+        $( '.gameButtons' ).hide();
+        $( '.menuImg').hide();
+        $( '.menuImg1' ).hide();
+        $( '.instructions').show();
+    });
+    $('#Menu').click(function(){
+        $( '.instructions' ).hide();
+        $( '.gameButtons' ).show();
+        $( '.menuImg' ).show();
+        $( '.menuImg1' ).show();     
+    });
+     $('#stats').click(function(){
+        $( '.gameButtons' ).hide();
+        $( '.menuImg').hide();
+        $( '.menuImg1' ).hide();
+        $( '.stats').show();
+    });
+     $('#toMenu').click(function(){
+        $( '.stats' ).hide();
+        $( '.gameButtons' ).show();
+        $( '.menuImg' ).show();
+        $( '.menuImg1' ).show();     
+    });
 
     var elements = document.querySelectorAll('.changeImg');
    
@@ -28,10 +52,9 @@ $(document).ready(function(){
             document.getElementById('attTeam1').innerHTML = newAtt;
             document.getElementById('midTeam1').innerHTML = newMid;
             document.getElementById('defTeam1').innerHTML = newDef;
-          
         });
     }   
-     
+    
     var elements = document.querySelectorAll('.changeImg1');
     
     for(i=0; i<elements.length;i++)
@@ -47,7 +70,25 @@ $(document).ready(function(){
             document.getElementById('midTeam2').innerHTML = newMid;
             document.getElementById('defTeam2').innerHTML = newDef;
         });
-    }   
-   
-
+    }  
+    $('#select').change(function(){
+        if ($(this).val() === $('#select1').val()) 
+        {
+            $('#check').attr('disabled',true);
+        }
+        else
+        {
+            $('#check').removeAttr('disabled');
+        }
+    });
+    $('#select1').change(function(){
+        if ($(this).val() === $('#select').val()) 
+        {
+           $('#check').attr('disabled',true);
+        }
+        else
+        {
+            $('#check').removeAttr('disabled');
+        }
+    });
 });

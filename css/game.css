@@ -1,46 +1,52 @@
-.gamebg{
-	position:relative;
+html { 
+	width: 100%; 
+	height:100%; 
+	
 }
-.gamebg .menu .backg{
-	margin-top:4%;
-	-webkit-filter: blur(2px);
+.gamebg {
+	background-image: url('../img/stadium.jpg'); 
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% auto;
+    margin-top:5%;
+	/*-webkit-filter: blur(2px);
   	-moz-filter: blur(2px);
   	-o-filter: blur(2px);
   	-ms-filter: blur(2px);
-  	filter: blur(2px);
-  	width:100%;
-  	height:auto;
-  	position:absolute;
+  	filter: blur(2px);*/
+  	z-index:10px; 
 }
-
 .menuImg{
 	position:absolute;
-	margin-top:7%;
+	margin-top:4%;
 	margin-left:7%;
+	z-index:15px;
+
 }
 .menuImg1{
 	position:absolute;
-	margin-top:7%;
+	margin-top:4%;
 	margin-left:70%;
+	z-index: 15px;
 }
 .menuImg img{
-	
 	width:70%
-	
 }
 .menuImg1 img{
-	width:95%
-	
+	width:95%	
 }
 .gameButtons{
-	position:absolute;
+	position:relative;
 	width:25%;
-	margin-left:37.5%;
-	margin-top:20%;
+	margin-left:37.5%;	
+	padding-top:20%;
+	padding-bottom:13%;
+	z-index:25px;
 }
 .gameButtons .btn{
 	margin-bottom:3%;
-
 }
 .teamSelection{
 	display:none;
@@ -96,4 +102,162 @@
 	text-align:center;
 	color:rgba(217, 29, 29, 1);
 	margin-top:4%;
+}
+.instructions{
+	display:none;
+	margin-top:5%;
+}
+.insButton{
+	position:relative;
+	width:25%;
+	margin-left:37.5%;
+	padding-top:33%;
+	padding-bottom:7%;
+}
+.board{
+	background: rgba(212, 63, 58, 0.7);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	width:60%;
+	color:white;
+	margin-left:20%;
+	position:absolute;
+}
+.textIns{
+	text-align:center;
+	font-size:2vw;
+	padding:2%;
+}
+.stats{
+	display:none;
+	width:70%;
+	margin-left:15%;
+}
+.arsenal{
+	width:50%;
+	display:inline;
+}
+.arsenal p{
+	display:inline;
+	color:white;
+	position:absolute;
+}
+.arsenal img{
+	position:absolute;
+	width:8%;
+	margin-top:5%;
+}
+.liverpool{
+	width:50%;
+	display:inline;
+	margin-left:50%;
+}
+.liverpool img{
+	position:absolute;
+	width:8%;
+	margin-top:5%;
+}
+.statButton{
+	position:absolute;
+	width:25%;
+	margin-left:22.5%;
+	margin-top:24%;
+}
+.line2{
+	margin-top:15%;
+}
+.manCity{
+	width:50%;
+	display:inline;
+}
+.manCity img{
+	position:absolute;
+	width:8%;
+	margin-top:5%;
+}
+.chelsea{
+	width:50%;
+	display:inline;
+	margin-left:50%;
+}
+.chelsea img{
+	position:absolute;
+	width:8%;
+	margin-top:5%;
+}
+@media screen and (max-width: 1300px) {
+	.menuImg{
+	position:absolute;
+	margin-top:9%;
+	margin-left:10%;
+	z-index:15px;
+
+	}
+	.menuImg1{
+	position:absolute;
+	margin-top:9%;
+	margin-left:70%;
+	z-index: 15px;
+	}
+	.menuImg img{
+	width:50%
+		}
+	.menuImg1 img{
+	width:75%	
+		}
+}
+@media screen and (max-width: 1150px) {
+	.menuImg{
+	position:absolute;
+	margin-top:9%;
+	margin-left:10%;
+	z-index:15px;
+
+	}
+	.menuImg1{
+	position:absolute;
+	margin-top:9%;
+	margin-left:70%;
+	z-index: 15px;
+	}
+	.menuImg img{
+	width:40%
+		}
+	.menuImg1 img{
+	width:75%	
+		}
+}
+@media screen and (max-width: 1000px) {
+	.menuImg{
+	position:absolute;
+	margin-top:9%;
+	margin-left:10%;
+	z-index:15px;
+	display:none;
+	}
+	.menuImg1{
+	position:absolute;
+	margin-top:9%;
+	margin-left:70%;
+	z-index: 15px;
+	display:none;
+	}
+	.menuImg img{
+	width:40%
+		}
+	.menuImg1 img{
+	width:75%	
+		}
+		.gameButtons{
+	position:relative;
+	width:50%;
+	margin-left:25%;	
+	padding-top:15%;
+	padding-bottom:12%;
+	z-index:25px;
+	}
+	.gamebg{
+		margin-top:8%;
+	}
 }
