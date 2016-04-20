@@ -158,19 +158,8 @@ border-color: white;
 	margin-left: 50%;
 	font-size: 2vw;
 }
-.stat label{
-	margin-right: 40%;
-	margin-top: 16%;
-	font-size: 5vw;
-	font-color:red;
-}
-.blackboard{
-	background-image:url("../img/blackboard.jpg" );
-	background-attachment: center;
-	background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover; 
-}
+
+
 .float{
 float:left;
 
@@ -259,6 +248,40 @@ float: left;
 }
 .white_space label{
 	color:#49FC96;
+}
+.scoreboard{
+	background-image:url("../img/blackboard.jpg" );
+	background-attachment: center;
+	background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover; 
+    width: 100%;
+    padding-bottom: 15%;
+}
+.wins label{
+	margin-left: 3.5%;
+	color: white;
+	font-size: 4vw;
+
+}
+.stat label{
+	color: white;
+	font-size: 15vw;
+}
+.win{
+margin-left: 4.5%;
+}
+.lose{
+	margin-left: 5.9%;
+}
+.draw{
+	margin-left: 7.7%;
+}
+.goal{
+	margin-left: 10%;
+}
+.conGoal{
+	margin-left: 20%;
 }
 
 

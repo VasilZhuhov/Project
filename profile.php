@@ -99,33 +99,28 @@
                    ".$_SESSION['logged_user']['first_name']."
 
                     ".$_SESSION['logged_user']['second_name']."
-                    </div>
-                    <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
-                    </div>
+                     </div>
                 </div>   
 
-                            <div class='team'>
-                            <div class='statistics'>
-                            <div class='wins'>
-                            <label>Победи  </label>
-                             </div>
-                             <div class='stat'>
-                            <label>0</label>
-                            </div>
-                            <div class='wins'>
-                             <label>Отбелязани голове  </label>
-                             </div>
-                             <div class='stat'>
-                             <label>0</label>
-                             </div>
-                            <div class='wins'>
-                            <label>Допуснати голове  </label>
-                            </div>
-                            <div class='stat'>
-                             <label>0</label>
-                             </div>
-                        </div>   
+                             <div class='scoreboard'>
+                       <div class='wins'>
+                               <label>Wins</label>
+                               <label>Losses</label>
+                               <label>Draws</label>
+                               <label>Goal Scored</label>
+                               <label>Goal Conceded</label>
+                      </div>         
+                      <div class='stat'>
+                               <label class='win'>0</label>
+                               <label class='lose'>0</label>
+                               <label class='draw'>0</label>
+                               <label class='goal'>0</label>
+                               <label class='conGoal'>0</label>  
+                       </div> 
+                        
+
+                   </div>
 
 
                         
@@ -144,34 +139,28 @@
                    ".$_SESSION['logged_user']['first_name']."
 
                     ".$_SESSION['logged_user']['second_name']."
-                    </div>
-                    <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
-                    </div>
-                   
+                     </div>
                 </div>   
 
-              <div class='team'>
-                            <div class='statistics'>
-                            <div class='wins'>
-                            <label>Победи  </label>
-                             </div>
-                             <div class='stat'>
-                            <label>0</label>
-                            </div>
-                            <div class='wins'>
-                             <label>Отбелязани голове  </label>
-                             </div>
-                             <div class='stat'>
-                             <label>0</label>
-                             </div>
-                            <div class='wins'>
-                            <label>Допуснати голове  </label>
-                            </div>
-                            <div class='stat'>
-                             <label>0</label>
-                             </div>
-                        </div>   
+               <div class='scoreboard'>
+                       <div class='wins'>
+                               <label>Wins</label>
+                               <label>Losses</label>
+                               <label>Draws</label>
+                               <label>Goal Scored</label>
+                               <label>Goal Conceded</label>
+                      </div>         
+                      <div class='stat'>
+                               <label class='win'>0</label>
+                               <label class='lose'>0</label>
+                               <label class='draw'>0</label>
+                               <label class='goal'>0</label>
+                               <label class='conGoal'>0</label>  
+                       </div> 
+                        
+
+                   </div>
 
                 
 
@@ -185,39 +174,34 @@
             echo "
                 <div class='profile_mancity'>
 
-                    <img  src=".$_SESSION['logged_user']['avatar'].">
+                     <img  src=".$_SESSION['logged_user']['avatar'].">
                     <div class='names'>
                    ".$_SESSION['logged_user']['first_name']."
 
                     ".$_SESSION['logged_user']['second_name']."
-                    </div>
-                    <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
-                    </div>
+                     </div>
                     
                 </div>
 
-              <div class='team'>
-                            <div class='statistics'>
-                            <div class='wins'>
-                            <label>Победи  </label>
-                             </div>
-                             <div class='stat'>
-                            <label>0</label>
-                            </div>
-                            <div class='wins'>
-                             <label>Отбелязани голове  </label>
-                             </div>
-                             <div class='stat'>
-                             <label>0</label>
-                             </div>
-                            <div class='wins'>
-                            <label>Допуснати голове  </label>
-                            </div>
-                            <div class='stat'>
-                             <label>0</label>
-                             </div>
-                        </div>   
+               <div class='scoreboard'>
+                       <div class='wins'>
+                               <label>Wins</label>
+                               <label>Losses</label>
+                               <label>Draws</label>
+                               <label>Goal Scored</label>
+                               <label>Goal Conceded</label>
+                      </div>         
+                      <div class='stat'>
+                               <label class='win'>0</label>
+                               <label class='lose'>0</label>
+                               <label class='draw'>0</label>
+                               <label class='goal'>0</label>
+                               <label class='conGoal'>0</label>  
+                       </div> 
+                        
+
+                   </div>
                 
 
                         
@@ -237,41 +221,33 @@
                    ".$_SESSION['logged_user']['first_name']."
 
                     ".$_SESSION['logged_user']['second_name']."
-                    </div>
-                    <div class='username'>
                     (".$_SESSION['logged_user']['username_sign'].")
-                    </div>
-                     
+                     </div>
 
                 </div>   
 
                
                 
 
-                   <div class='team'>
-                            <div class='blackboard'>    
-                            <div class='statistics'>
-                            <div class='wins'>
-                            <label>Победи  </label>
-                             </div>
-                             <div class='stat'>
-                            <label>0</label>
-                            </div>
-                            <div class='wins'>
-                             <label>Отбелязани голове  </label>
-                             </div>
-                             <div class='stat'>
-                             <label>0</label>
-                             </div>
-                            <div class='wins'>
-                            <label>Допуснати голове  </label>
-                            </div>
-                            <div class='stat'>
-                             <label>0</label>
-                             </div>
-                        </div>      
-                        </div> 
-                         
+                   <div class='scoreboard'>
+                       <div class='wins'>
+                               <label>Wins</label>
+                               <label>Losses</label>
+                               <label>Draws</label>
+                               <label>Goal Scored</label>
+                               <label>Goal Conceded</label>
+                      </div>         
+                      <div class='stat'>
+                               <label class='win'>0</label>
+                               <label class='lose'>0</label>
+                               <label class='draw'>0</label>
+                               <label class='goal'>0</label>
+                               <label class='conGoal'>0</label>  
+                       </div> 
+                        
+
+                   </div>
+
 
 
 
