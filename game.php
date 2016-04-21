@@ -99,7 +99,7 @@
         <!--Game menu-->
         <div class="menu">
             <div class='menuImg'>
-               <img src='img/cou.png'>
+               <img src='img/cou1.png'>
             </div>
             <div class='menuImg1'>
                <img src='img/sanchez.png'>
@@ -107,7 +107,6 @@
             <div class="gameButtons">
                 <input id="play" class="btn btn-danger" type="submit" value="Play">
                 <input id="instructions" class="btn btn-danger" type="submit" value="Instructions">
-                <input id="stats" class="btn btn-danger" type="submit" value="Team stats">
             </div> 
         </div>
         <!--Instructions-->
@@ -119,36 +118,10 @@
                 <input id="Menu" type='submit' class="btn btn-danger" value="Menu">
             </div>
         </div>
-        <!--Stats-->
-        <div class='stats'>
-            <div class='line1'>
-                <div class='arsenal'>
-                    <img src='img/1.png'>
-                    <p></p>
-                </div>
-                <div class='liverpool'>
-                    <img src='img/2.png'>
-                    <p></p>
-                </div>
-            </div>
-            <div class='line2'>
-                <div class='manCity'>
-                    <img src='img/3.png'>
-                    <p></p>
-                </div>
-                <div class='chelsea'>
-                    <img src='img/4.png'>
-                    <p></p>
-                </div>
-            </div>
-            <div class="statButton">
-                <input id="toMenu" type='submit' class="btn btn-danger" value="Menu">
-            </div>
-        </div>
         <!--Team selection-->
         <div>
             <div class='teamSelection'>
-                <div class='yourTeam'>
+                 <div class='yourTeam'>
                     <div class='teamImg'>
                        <img id='mainImg' src="img/1.png">
                     </div>

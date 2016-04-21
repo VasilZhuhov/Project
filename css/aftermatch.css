@@ -1,0 +1,185 @@
+body 
+{
+	background-image: url("../img/background1.png");
+    background-repeat: repeat;
+    font-family:Fertigo;
+    
+}
+.gamebg{
+	position:relative;
+}
+.gamebg .menu .backg{
+	margin-top:4%;
+	-webkit-filter: blur(2px);
+  	-moz-filter: blur(2px);
+  	-o-filter: blur(2px);
+  	-ms-filter: blur(2px);
+  	filter: blur(2px);
+  	width:100%;
+  	height:auto;
+  	position:absolute;
+}
+
+.menuImg{
+	position:absolute;
+	margin-top:7%;
+	margin-left:7%;
+}
+.menuImg1{
+	position:absolute;
+	margin-top:7%;
+	margin-left:70%;
+}
+.menuImg img{
+	
+	width:70%
+	
+}
+.menuImg1 img{
+	width:95%
+	
+}
+.gameButtons{
+	position:absolute;
+	width:25%;
+	margin-left:37.5%;
+	margin-top:20%;
+}
+.gameButtons .btn{
+	margin-bottom:3%;
+
+}
+.teamSelection
+{
+	position:absolute;
+	width:60%;
+	margin-left:20%;
+	margin-top:4%;
+}
+.yourTeam{
+	width:30%;
+	display:inline-block;
+	float:left;
+}
+.opponent{
+	width:30%;
+	display:inline-block;		
+	float:right;
+}  
+.teamImg img{
+	width:40%;
+	margin-left:11%;
+	margin-top:5%;
+}
+.teamImg{
+	text-align:left;
+	position:absolute;
+	width:50%;
+}
+.select{
+	margin-top:100%;
+	display:inline-block;
+}
+.teamImg1 img{
+	width:40%;
+	margin-left:11%;
+	margin-top:5%;
+}
+.teamImg1{
+	text-align:left;
+	position:absolute;
+	width:50%;
+}
+.bottomButtons{
+	width:30%;
+	position:relative;
+	margin-top:37%;
+	margin-left:35%;
+}
+.bottomButtons input{
+	margin-top:3%;
+}
+.change{
+	text-align:center;
+	color:rgba(217, 29, 29, 1);
+	margin-top:4%;
+}
+.stats
+{
+	width:30%;
+	margin-top:11%;
+	margin-left:36%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center; 
+}
+.min
+{
+	font-style:italic;
+}
+.result{
+
+}
+.shots
+{
+	margin-top:38%;
+}
+.saves
+{
+	margin-top:5%; 
+}
+.misses
+{
+	margin-top:5%;
+}
+.wastes
+{
+	margin-top:5%;
+}
+.teamShots
+{
+	margin-top:33%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
+.teamSaves
+{
+	margin-top:40.5%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
+.teamMisses
+{
+	margin-top:48%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
+.wasted
+{
+	margin-top:55.5%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
