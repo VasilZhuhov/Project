@@ -104,7 +104,7 @@ require_once('ajax.php');
                 	<div class='shots'>Shots</div>
                 	<div class='saves'>Saves</div>
                 	<div class='misses'>Misses</div>
-                    <div class='wastes'>Wasted opportunities</div>
+                    <div class='wastes'>Failed attempts</div>
                 </div>  
                 <div class='opponent'>
                     <div class='teamImg1'>

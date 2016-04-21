@@ -136,15 +136,22 @@ html {
 	padding:2%;
 }
 @media screen and (max-width: 1000px) {
-		.gameButtons{
-	position:relative;
-	width:40%;
-	margin-left:30%;	
-	padding-top:17%;
-	padding-bottom:12%;
-	z-index:25px;
+	.gameButtons{
+		position:relative;
+		width:40%;
+		margin-left:30%;	
+		padding-top:17%;
+		padding-bottom:12%;
+		z-index:25px;
 	}
 	.gamebg{
 		margin-top:8%;
+	}
+	.change{
+		font-size:1.7vw;
+	}
+	.bottomButtons{
+		padding-top:22%;
+		padding-bottom:9%;
 	}
 }

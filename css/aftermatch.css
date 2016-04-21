@@ -19,36 +19,6 @@ body
   	height:auto;
   	position:absolute;
 }
-
-.menuImg{
-	position:absolute;
-	margin-top:7%;
-	margin-left:7%;
-}
-.menuImg1{
-	position:absolute;
-	margin-top:7%;
-	margin-left:70%;
-}
-.menuImg img{
-	
-	width:70%
-	
-}
-.menuImg1 img{
-	width:95%
-	
-}
-.gameButtons{
-	position:absolute;
-	width:25%;
-	margin-left:37.5%;
-	margin-top:20%;
-}
-.gameButtons .btn{
-	margin-bottom:3%;
-
-}
 .teamSelection
 {
 	position:absolute;
@@ -90,20 +60,6 @@ body
 	position:absolute;
 	width:50%;
 }
-.bottomButtons{
-	width:30%;
-	position:relative;
-	margin-top:37%;
-	margin-left:35%;
-}
-.bottomButtons input{
-	margin-top:3%;
-}
-.change{
-	text-align:center;
-	color:rgba(217, 29, 29, 1);
-	margin-top:4%;
-}
 .stats
 {
 	width:30%;
@@ -129,15 +85,15 @@ body
 }
 .saves
 {
-	margin-top:5%; 
+	margin-top:6%; 
 }
 .misses
 {
-	margin-top:5%;
+	margin-top:6%;
 }
 .wastes
 {
-	margin-top:5%;
+	margin-top:6%;
 }
 .teamShots
 {
