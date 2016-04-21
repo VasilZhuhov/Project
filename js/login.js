@@ -68,6 +68,68 @@ $("#signup").submit(function(){
 		return false;
 	}
 })
+setInterval(function(){
+     	var data = $('#logShow input[name=username_log]').val();
+ 	    $.ajax({
+
+ 	    	url: "php/Username.php",
+ 	    	type: "POST",
+ 	    	data: {data: data
+ 	    		},
+ 	    	 success: function(result){
+ 	    		if(result != '')
+ 	    		{
+ 	    			$('.logvalidation').css('color', '#2EE619');
+ 	    			$('.logvalidation').text(result);
+ 	    			$('#logShow input[name=username_log]').removeClass('correct')
+ 	    			
+
+
+ 	    		}
+ 	    		else
+ 	    		{
+ 					$('.logvalidation').css('color','#F71111');
+ 					$('.logvalidation').text(" Inexistant username");
+ 					$('#logShow input[name=username_log]').addClass('correct')
+ 					
+
+ 	    		}
+ 	    	}
+ 	    });
+     }, 200);
+setInterval(function(){
+     	var data = $('#logShow input[name=password_log]').val();
+ 	    $.ajax({
+
+ 	    	url: "php/Username.php",
+ 	    	type: "POST",
+ 	    	data: {data: data
+ 	    		},
+ 	    	 success: function(result){
+ 	    		if(result != '')
+ 	    		{
+ 	    			$('.logvalidations').css('color', '#2EE619');
+ 	    			$('.logvalidations').text(result);
+ 	    			$('#logShow input[name=_log]').addClass('correct')
+ 	    			
+
+
+ 	    		}
+ 	    		else
+ 	    		{
+ 					$('.logvalidations').css('color','#F71111');
+ 					$('.logvalidations').text("Inexistant password");
+ 					$('#logShow input[name=password_log]').removeClass('correct')
+
+ 					
+
+ 	    		}
+ 	    	}
+ 	    });
+     }, 200);
+
+
+
 
 
   

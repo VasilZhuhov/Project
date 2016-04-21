@@ -194,11 +194,14 @@ s
         <div>
             <div class="log">
     
-                <form method="post" action="php/login_db.php">
+                <form  method="post" action="php/login_db.php">
                     <h1>Login</h1>
                     <input type="text" name="username_log" placeholder="Username" required="required" />
+                    <label class="logvalidation"></label>
                     <input type="password" name="password_log" placeholder="Password" required="required" />
+                    <label class="logvalidations"></label>
                     <input class="btn btn-danger" type="submit" value="Login now!">
+
 					<p class="toggleRegForm" id="openReg">or <span class="toggleRegister">Register now</span>?</p>
                 </form>
             </div>
