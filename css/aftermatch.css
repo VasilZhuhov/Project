@@ -5,36 +5,34 @@ body
     font-family:Fertigo;
     
 }
-.gamebg{
-	position:relative;
-}
-.gamebg .menu .backg{
-	margin-top:4%;
-	-webkit-filter: blur(2px);
-  	-moz-filter: blur(2px);
-  	-o-filter: blur(2px);
-  	-ms-filter: blur(2px);
-  	filter: blur(2px);
-  	width:100%;
-  	height:auto;
-  	position:absolute;
+.gamebg {
+	background-image: url('../img/stadium.jpg'); 
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% auto;
+    margin-top:5%;
+  	z-index:10px; 
 }
 .teamSelection
 {
-	position:absolute;
+	position:relative;
 	width:60%;
 	margin-left:20%;
-	margin-top:4%;
+	padding-bottom:3%;
 }
 .yourTeam{
 	width:30%;
 	display:inline-block;
 	float:left;
+	padding-top:2%;
 }
 .opponent{
 	width:30%;
 	display:inline-block;		
 	float:right;
+	padding-top:2%
 }  
 .teamImg img{
 	width:40%;
@@ -63,10 +61,11 @@ body
 .stats
 {
 	width:30%;
-	margin-top:11%;
-	margin-left:36%;
+	margin-top:13%;
+	margin-bottom:3%;
+	margin-left:6%;
 	color:white;
-	position:absolute;
+	position:relative;
 	display:inline-block;
 	font-size:2.3vw;
 	font-weight:bold;
@@ -75,9 +74,6 @@ body
 .min
 {
 	font-style:italic;
-}
-.result{
-
 }
 .shots
 {
