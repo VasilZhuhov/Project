@@ -194,7 +194,7 @@ s
         <div>
             <div class="log">
     
-                <form method="post" action="php/login_db.php">
+                <form  method="post" action="php/login_db.php">
                     <h1>Login</h1>
                     <input type="text" name="username_log" placeholder="Username" required="required" />
                     <label class="logvalidation"></label>

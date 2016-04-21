@@ -74,7 +74,7 @@ setInterval(function(){
 
  	    	url: "php/Username.php",
  	    	type: "POST",
- 	    	data: {data: data,
+ 	    	data: {data: data
  	    		},
  	    	 success: function(result){
  	    		if(result != '')
@@ -103,14 +103,14 @@ setInterval(function(){
 
  	    	url: "php/Username.php",
  	    	type: "POST",
- 	    	data: {data: data,
+ 	    	data: {data: data
  	    		},
  	    	 success: function(result){
  	    		if(result != '')
  	    		{
  	    			$('.logvalidations').css('color', '#2EE619');
  	    			$('.logvalidations').text(result);
- 	    			$('#logShow input[name=password_log]').removeClass('correct')
+ 	    			$('#logShow input[name=_log]').addClass('correct')
  	    			
 
 
@@ -119,13 +119,15 @@ setInterval(function(){
  	    		{
  					$('.logvalidations').css('color','#F71111');
  					$('.logvalidations').text("Inexistant password");
- 					$('#logShow input[name=_log]').addClass('correct')
+ 					$('#logShow input[name=password_log]').removeClass('correct')
+
  					
 
  	    		}
  	    	}
  	    });
      }, 200);
+
 
 
 
