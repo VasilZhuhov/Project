@@ -11,11 +11,6 @@ html {
     -o-background-size: cover;
     background-size: 100% auto;
     margin-top:5%;
-	/*-webkit-filter: blur(2px);
-  	-moz-filter: blur(2px);
-  	-o-filter: blur(2px);
-  	-ms-filter: blur(2px);
-  	filter: blur(2px);*/
   	z-index:10px; 
 }
 .menuImg{
@@ -41,8 +36,8 @@ html {
 	position:relative;
 	width:25%;
 	margin-left:37.5%;	
-	padding-top:20%;
-	padding-bottom:13%;
+	padding-top:24%;
+	padding-bottom:14%;
 	z-index:25px;
 }
 .gameButtons .btn{
@@ -50,20 +45,23 @@ html {
 }
 .teamSelection{
 	display:none;
-	position:absolute;
+	position:relative;
 	width:60%;
 	margin-left:20%;
-	margin-top:12%;
+	padding-bottom:6%;
+	padding-top:5%;
 }
 .yourTeam{
 	width:30%;
 	display:inline-block;
 	float:left;
+	padding-top:5%;
 }
 .opponent{
 	width:30%;
 	display:inline-block;		
 	float:right;
+	padding-top:5%;
 }  
 .teamImg img{
 	width:40%;
@@ -90,12 +88,14 @@ html {
 	width:50%;
 }
 .bottomButtons{
-	width:30%;
 	position:relative;
-	margin-top:37%;
-	margin-left:35%;
+	width:30%;
+	margin-top:12%;
+	margin-left:35.5%;	
+	padding-top:31%;
+	z-index:25px;
 }
-.bottomButtons input{
+.bottomButtons .btn{
 	margin-top:3%;
 }
 .change{
@@ -121,142 +121,35 @@ html {
 	width:60%;
 	color:white;
 	margin-left:20%;
+<<<<<<< HEAD
 	position: relative;
+=======
+	position:absolute;
+	margin-top:6%;
+>>>>>>> bc7eb4022510cc64bf69b54fd2899fa45d15d5e6
 }
 .textIns{
 	text-align:center;
 	font-size:2vw;
 	padding:2%;
 }
-.stats{
-	display:none;
-	width:70%;
-	margin-left:15%;
-}
-.arsenal{
-	width:50%;
-	display:inline;
-}
-.arsenal p{
-	display:inline;
-	color:white;
-	position:absolute;
-}
-.arsenal img{
-	position:absolute;
-	width:8%;
-	margin-top:5%;
-}
-.liverpool{
-	width:50%;
-	display:inline;
-	margin-left:50%;
-}
-.liverpool img{
-	position:absolute;
-	width:8%;
-	margin-top:5%;
-}
-.statButton{
-	position:absolute;
-	width:25%;
-	margin-left:22.5%;
-	margin-top:24%;
-}
-.line2{
-	margin-top:15%;
-}
-.manCity{
-	width:50%;
-	display:inline;
-}
-.manCity img{
-	position:absolute;
-	width:8%;
-	margin-top:5%;
-}
-.chelsea{
-	width:50%;
-	display:inline;
-	margin-left:50%;
-}
-.chelsea img{
-	position:absolute;
-	width:8%;
-	margin-top:5%;
-}
-@media screen and (max-width: 1300px) {
-	.menuImg{
-	position:absolute;
-	margin-top:9%;
-	margin-left:10%;
-	z-index:15px;
-
-	}
-	.menuImg1{
-	position:absolute;
-	margin-top:9%;
-	margin-left:70%;
-	z-index: 15px;
-	}
-	.menuImg img{
-	width:50%
-		}
-	.menuImg1 img{
-	width:75%	
-		}
-}
-@media screen and (max-width: 1150px) {
-	.menuImg{
-	position:absolute;
-	margin-top:9%;
-	margin-left:10%;
-	z-index:15px;
-
-	}
-	.menuImg1{
-	position:absolute;
-	margin-top:9%;
-	margin-left:70%;
-	z-index: 15px;
-	}
-	.menuImg img{
-	width:40%
-		}
-	.menuImg1 img{
-	width:75%	
-		}
-}
 @media screen and (max-width: 1000px) {
-	.menuImg{
-	position:absolute;
-	margin-top:9%;
-	margin-left:10%;
-	z-index:15px;
-	display:none;
-	}
-	.menuImg1{
-	position:absolute;
-	margin-top:9%;
-	margin-left:70%;
-	z-index: 15px;
-	display:none;
-	}
-	.menuImg img{
-	width:40%
-		}
-	.menuImg1 img{
-	width:75%	
-		}
-		.gameButtons{
-	position:relative;
-	width:50%;
-	margin-left:25%;	
-	padding-top:15%;
-	padding-bottom:12%;
-	z-index:25px;
+	.gameButtons{
+		position:relative;
+		width:40%;
+		margin-left:30%;	
+		padding-top:17%;
+		padding-bottom:12%;
+		z-index:25px;
 	}
 	.gamebg{
 		margin-top:8%;
+	}
+	.change{
+		font-size:1.7vw;
+	}
+	.bottomButtons{
+		padding-top:22%;
+		padding-bottom:9%;
 	}
 }

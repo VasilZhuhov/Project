@@ -25,18 +25,6 @@ $(document).ready(function(){
         $( '.menuImg' ).show();
         $( '.menuImg1' ).show();     
     });
-     $('#stats').click(function(){
-        $( '.gameButtons' ).hide();
-        $( '.menuImg').hide();
-        $( '.menuImg1' ).hide();
-        $( '.stats').show();
-    });
-     $('#toMenu').click(function(){
-        $( '.stats' ).hide();
-        $( '.gameButtons' ).show();
-        $( '.menuImg' ).show();
-        $( '.menuImg1' ).show();     
-    });
 
     var elements = document.querySelectorAll('.changeImg');
    

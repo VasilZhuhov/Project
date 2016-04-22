@@ -1,0 +1,137 @@
+body 
+{
+	background-image: url("../img/background1.png");
+    background-repeat: repeat;
+    font-family:Fertigo;
+    
+}
+.gamebg {
+	background-image: url('../img/stadium.jpg'); 
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% auto;
+    margin-top:5%;
+  	z-index:10px; 
+}
+.teamSelection
+{
+	position:relative;
+	width:60%;
+	margin-left:20%;
+	padding-bottom:3%;
+}
+.yourTeam{
+	width:30%;
+	display:inline-block;
+	float:left;
+	padding-top:2%;
+}
+.opponent{
+	width:30%;
+	display:inline-block;		
+	float:right;
+	padding-top:2%
+}  
+.teamImg img{
+	width:40%;
+	margin-left:11%;
+	margin-top:5%;
+}
+.teamImg{
+	text-align:left;
+	position:absolute;
+	width:50%;
+}
+.select{
+	margin-top:100%;
+	display:inline-block;
+}
+.teamImg1 img{
+	width:40%;
+	margin-left:11%;
+	margin-top:5%;
+}
+.teamImg1{
+	text-align:left;
+	position:absolute;
+	width:50%;
+}
+.stats
+{
+	width:30%;
+	margin-top:13%;
+	margin-bottom:3%;
+	margin-left:6%;
+	color:white;
+	position:relative;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center; 
+}
+.min
+{
+	font-style:italic;
+}
+.shots
+{
+	margin-top:38%;
+}
+.saves
+{
+	margin-top:6%; 
+}
+.misses
+{
+	margin-top:6%;
+}
+.wastes
+{
+	margin-top:6%;
+}
+.teamShots
+{
+	margin-top:33%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
+.teamSaves
+{
+	margin-top:40.5%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
+.teamMisses
+{
+	margin-top:48%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
+.wasted
+{
+	margin-top:55.5%;
+	margin-left:14%;
+	color:white;
+	position:absolute;
+	display:inline-block;
+	font-size:2.3vw;
+	font-weight:bold;
+	text-align:center;
+}
