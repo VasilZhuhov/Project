@@ -256,6 +256,30 @@ var i = 0;
 			}
 		});
 	}, 1000);
+
+	var c = 0;
+	var comment = 0;
+	setInterval(function()
+	{
+		$.ajax({
+			url: "../php/actions/commentPHP.php",
+			type: "POST",
+			data: 
+			{
+				c: c, 
+				match_id: <?php echo $match_id ?>, 
+				comment: comment,
+				team1id:<?php echo $team1[0]['id'] ?>,
+				team2id:<?php echo $team2[0]['id'] ?>
+			}, 
+			success: function(result) 
+			{
+				comment = result;
+				document.getElementById('comment').innerHTML = result;
+				c++;
+			}
+		});
+	}, 1000);
 </script>
 <body>
 </body>
