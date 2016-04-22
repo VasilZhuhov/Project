@@ -258,16 +258,24 @@ float: left;
 .wins label{
 	margin-left: 3.5%;
 	color: white;
-	font-size: 4vw;
-
+	font-size: 7vw;
+	float:left;
+}
+.WLD label{ 
+	margin-left: 11%;
 }
 .stat label{
 	color: white;
+	margin-right: 20%;
+	margin-left: 15%;
 	font-size: 15vw;
 }
-.win{
-margin-left: 4.5%;
+.stati label{
+	color: white;
+	font-size: 15vw;
+	margin-right: 13%;
 }
+
 .lose{
 	margin-left: 5.9%;
 }
@@ -280,6 +288,7 @@ margin-left: 4.5%;
 .conGoal{
 	margin-left: 20%;
 }
+
 
 
 

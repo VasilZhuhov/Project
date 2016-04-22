@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand navbar-brand-default" href="index.php">F.A. League</a>
+                <a class="navbar-brand navbar-brand-default"  href="index.php">F.A. League</a>
             </div>
             <?php
                 if(!isset($_SESSION['logged_user']))
@@ -66,7 +66,7 @@
                        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                             <ul class='nav navbar-nav'>
                                 <li>
-                                    <a href='game.php'>The Game</a>
+                                    <a class='hover' href='game.php'>The Game</a>
                                 </li>
                                 </ul>
                                     <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
@@ -230,17 +230,21 @@
                 
 
                    <div class='scoreboard'>
-                       <div class='wins'>
+                       <div class='wins WLD'>
                                <label>Wins</label>
                                <label>Losses</label>
                                <label>Draws</label>
+                               <div class='stati'>
+                               <label>0</label>
+                               <label>0</label>
+                               <label>0</label>
+                               </div>
+                      </div>
+                      <div class='wins'>
                                <label>Goal Scored</label>
                                <label>Goal Conceded</label>
                       </div>         
                       <div class='stat'>
-                               <label class='win'>0</label>
-                               <label class='lose'>0</label>
-                               <label class='draw'>0</label>
                                <label class='goal'>0</label>
                                <label class='conGoal'>0</label>  
                        </div> 
