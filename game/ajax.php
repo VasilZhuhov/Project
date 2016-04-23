@@ -25,7 +25,7 @@ var i = 0;
 					i++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var g1 = 0;
 	var goalTeam1 = 0;
@@ -48,7 +48,7 @@ var i = 0;
 				g1++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var g2 = 0;
 	var goalTeam2 = 0;
@@ -71,7 +71,7 @@ var i = 0;
 				g2++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var s1 = 0;
 	var shotsTeam1 = 0;
@@ -94,7 +94,7 @@ var i = 0;
 				s1++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var s2 = 0;
 	var shotsTeam2 = 0;
@@ -117,7 +117,7 @@ var i = 0;
 				s2++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var saves1 = 0;
 	var savesTeam1 = 0;
@@ -140,7 +140,7 @@ var i = 0;
 				saves1++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var saves2 = 0;
 	var savesTeam2 = 0;
@@ -163,7 +163,7 @@ var i = 0;
 				saves2++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var m1 = 0;
 	var missTeam1 = 0;
@@ -186,7 +186,7 @@ var i = 0;
 				m1++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var m2 = 0;
 	var missTeam2 = 0;
@@ -209,7 +209,7 @@ var i = 0;
 				m2++;
 			}
 		});
-	}, 1000);
+	}, 2500);
 
 	var w1 = 0;
 	var wastedTeam1 = 0;
@@ -232,7 +232,7 @@ var i = 0;
 				w1++;
 			}
 		});
-	}, 1000); 
+	}, 2500); 
 
 	var w2 = 0;
 	var wastedTeam2 = 0;
@@ -255,7 +255,31 @@ var i = 0;
 				w2++;
 			}
 		});
-	}, 1000);
+	}, 2500);
+
+	var c = 0;
+	var comment = 0;
+	setInterval(function()
+	{
+		$.ajax({
+			url: "../php/actions/commentPHP.php",
+			type: "POST",
+			data: 
+			{
+				c: c, 
+				match_id: <?php echo $match_id ?>, 
+				comment: comment,
+				team1id:<?php echo $team1[0]['id'] ?>,
+				team2id:<?php echo $team2[0]['id'] ?>
+			}, 
+			success: function(result) 
+			{
+				comment = result;
+				document.getElementById('comment').innerHTML = result;
+				c++;
+			}
+		});
+	}, 2500);
 </script>
 <body>
 </body>
