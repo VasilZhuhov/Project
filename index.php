@@ -240,13 +240,13 @@ s
                     <input class="validation" type="text" name="second_name" placeholder="Last name" required="required" />
                     <label class="validation-info"></label>
                     </div>
-                    <select name="team" >
+                    <select name="team" id="teams" >
                         <option value="Arsenal" selected>Arsenal</option>
                         <option value="Liverpool" >Liverpool</option>
                         <option value="Man City" >Man City</option>
                         <option value="Chelsea" >Chelsea</option>
                     </select>
-                    <div class="white_space">
+                    <div class="white_space" >
                     <input class="validation" type="file" name="image">
                     <label class="validation-info"></label>
                     </div>

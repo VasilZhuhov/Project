@@ -245,7 +245,7 @@
                                <label>Goal Conceded</label>
                       </div>         
                       <div class='stat'>
-                               <label class='goal'>0</label>
+                               <label class='goal'>".$_SESSION['logged_user']['scoredgoals']."</label>
                                <label class='conGoal'>0</label>  
                        </div> 
                         

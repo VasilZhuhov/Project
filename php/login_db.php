@@ -15,11 +15,16 @@ if(!empty($result))
 	}
 	else //if username exists but password is wrong
 	{
-		echo "Wrong pass";	
+		header('Location: ../index.php');
+
+	
 	}
 }
 else //if no user is found
 {
-	echo "NOOOO";	
+		header('Location: ../index.php');
+
+	
+	
 }
 // Login : POST -> url: localhost:port/login?username=admin&password=1234
