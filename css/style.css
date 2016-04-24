@@ -255,45 +255,43 @@ float: left;
 	color:#49FC96;
 }
 .scoreboard{
-	background: url("../img/blackboard.jpg") center center  no-repeat fixed;
-	padding-bottom: 15%;
-	font-family: Chalkboard;
+ background: url("../img/blackboard.jpg") center center  no-repeat fixed;
+ padding-bottom: 15%;
+ font-family: Chalkboard;
 }
 .wins label{
-	margin-left: 3.5%;
-	color: white;
-	font-size: 7vw;
-	float:left;
+ margin-left: 3.5%;
+ color: white;
+ font-size: 7vw;
+ float:left;
 }
 .WLD label{ 
-	margin-left: 11%;
+ margin-left: 11%;
 }
 .stat label{
-	color: white;
-	margin-right: 20%;
-	margin-left: 15%;
-	font-size: 15vw;
+ color: white;
+ margin-right: 20%;
+ margin-left: 15%;
+ font-size: 15vw;
 }
 .stati label{
-	color: white;
-	font-size: 15vw;
-	margin-right: 13%;
+ color: white;
+ font-size: 15vw;
+ margin-right: 13%;
 }
 
 .lose{
-	margin-left: 5.9%;
+ margin-left: 5.9%;
 }
 .draw{
-	margin-left: 7.7%;
+ margin-left: 7.7%;
 }
 .goal{
-	margin-left: 10%;
+ margin-left: 10%;
 }
 .conGoal{
-	margin-left: 20%;
+ margin-left: 20%;
 }
-
-
 
 
 

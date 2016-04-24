@@ -19,7 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet"> 
-            <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet"> 
     <link rel="stylesheet" href="css/nav.css">
 
       
