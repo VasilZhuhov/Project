@@ -73,7 +73,7 @@
 				}
 			}
 		}
-		
+
 		function updateRow($table, $row)
 		{
 			$query = "UPDATE `".$table."` SET ";
@@ -83,12 +83,9 @@
 			{
 				$conditions[] = " `".$table."`.`".$dbField."` = '".$dbValue."'";
 			}
-			
 			$query .= implode(',', $conditions);
 			$query .= " WHERE `".$table."`.`id` = '".$row['id']."'";
-			
 			mysqli_query($this->dbHandle, $query);
-			
 		}
 		
 		function insertRow($table, $row)

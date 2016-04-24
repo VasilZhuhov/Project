@@ -1,3 +1,7 @@
+@font-face {
+	font-family: "Chalkboard";
+	src: url(../fonts/Chalkboard.ttf);
+}
 
 html { 
 	width: 100%; 
@@ -5,7 +9,8 @@ html {
 	
 }
 body {
-	background-image: url("../img/background1.png");
+	background-image: url("../img/dark_wood.png");
+	/*background-color: black;*/
     background-repeat: repeat;
     font-family:Fertigo;
     
@@ -252,8 +257,7 @@ float: left;
 .scoreboard{
 	background: url("../img/blackboard.jpg") center center  no-repeat fixed;
 	padding-bottom: 15%;
-
-
+	font-family: Chalkboard;
 }
 .wins label{
 	margin-left: 3.5%;
@@ -288,13 +292,7 @@ float: left;
 .conGoal{
 	margin-left: 20%;
 }
-select  option[value="Arsenal"]
-{
-	background-image: url("../img/1.png");
-	background-repeat:no-repeat;
-	background-position:bottom left;
-	padding-left:30px;
-}
+
 
 
 
