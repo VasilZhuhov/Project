@@ -104,19 +104,23 @@
                 </div>   
 
                              <div class='scoreboard'>
-                       <div class='wins'>
+                       <div class='wins WLD'>
                                <label>Wins</label>
                                <label>Losses</label>
                                <label>Draws</label>
+                               <div class='stati'>
+                               <label>0</label>
+                               <label>0</label>
+                               <label>0</label>
+                               </div>
+                      </div>
+                      <div class='wins'>
                                <label>Goal Scored</label>
                                <label>Goal Conceded</label>
                       </div>         
                       <div class='stat'>
-                               <label class='win'>0</label>
-                               <label class='lose'>0</label>
-                               <label class='draw'>0</label>
-                               <label class='goal'>0</label>
-                               <label class='conGoal'>0</label>  
+                               <label class='goal'>".$_SESSION['logged_user']['scoredgoals']."</label>
+                               <label class='conGoal'>".$_SESSION['logged_user']['concededgoals']."</label>  
                        </div> 
                         
 
@@ -144,19 +148,23 @@
                 </div>   
 
                <div class='scoreboard'>
-                       <div class='wins'>
+                       <div class='wins WLD'>
                                <label>Wins</label>
                                <label>Losses</label>
                                <label>Draws</label>
+                               <div class='stati'>
+                               <label>0</label>
+                               <label>0</label>
+                               <label>0</label>
+                               </div>
+                      </div>
+                      <div class='wins'>
                                <label>Goal Scored</label>
                                <label>Goal Conceded</label>
                       </div>         
                       <div class='stat'>
-                               <label class='win'>0</label>
-                               <label class='lose'>0</label>
-                               <label class='draw'>0</label>
-                               <label class='goal'>0</label>
-                               <label class='conGoal'>0</label>  
+                               <label class='goal'>".$_SESSION['logged_user']['scoredgoals']."</label>
+                               <label class='conGoal'>".$_SESSION['logged_user']['concededgoals']."</label>  
                        </div> 
                         
 
@@ -185,19 +193,23 @@
                 </div>
 
                <div class='scoreboard'>
-                       <div class='wins'>
+                       <div class='wins WLD'>
                                <label>Wins</label>
                                <label>Losses</label>
                                <label>Draws</label>
+                               <div class='stati'>
+                               <label>0</label>
+                               <label>0</label>
+                               <label>0</label>
+                               </div>
+                      </div>
+                      <div class='wins'>
                                <label>Goal Scored</label>
                                <label>Goal Conceded</label>
                       </div>         
                       <div class='stat'>
-                               <label class='win'>0</label>
-                               <label class='lose'>0</label>
-                               <label class='draw'>0</label>
-                               <label class='goal'>0</label>
-                               <label class='conGoal'>0</label>  
+                               <label class='goal'>".$_SESSION['logged_user']['scoredgoals']."</label>
+                               <label class='conGoal'>".$_SESSION['logged_user']['concededgoals']."</label>  
                        </div> 
                         
 
@@ -246,7 +258,7 @@
                       </div>         
                       <div class='stat'>
                                <label class='goal'>".$_SESSION['logged_user']['scoredgoals']."</label>
-                               <label class='conGoal'>0</label>  
+                               <label class='conGoal'>".$_SESSION['logged_user']['concededgoals']."</label>  
                        </div> 
                         
 
