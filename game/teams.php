@@ -47,6 +47,9 @@ $team2GK = $team2[0][4];
 $min = 0;
 $goal["scoredgoals"] = 0;
 
+$goal["concededgoals"] = 0;
+
+
 $goal = ["id"=> NULL, "username_sign"=>$_SESSION['logged_user']['username_sign'], "password_sign"=> $_SESSION['logged_user']['password_sign'], "email"=>$_SESSION['logged_user']['email'],"first_name"=>$_SESSION['logged_user']['first_name'],"second_name"=>$_SESSION['logged_user']['second_name'],"team"=>$_SESSION['logged_user']['team'],"avatar"=>$_SESSION['logged_user']['avatar'],"wins"=>$_SESSION['logged_user']['wins'],"losses"=>$_SESSION['logged_user']['losses'],"draws"=>$_SESSION['logged_user']['draws'],"team"=>$_SESSION['logged_user']['team'],"scoredgoals"=>$_SESSION['logged_user']['scoredgoals'],"concededgoals"=>$_SESSION['logged_user']['concededgoals'] ];
 $data = ["id"=> NULL, "match_id"=> $match_id, "minute"=> 0, "action_id"=> 0, "team_id"=> 0];
 
@@ -130,6 +133,11 @@ while($min <= 89)
 							{
 								$data["action_id"] = 2;
 								$newMin = $db->saveArray("minutes", $data);
+								$goal["concededgoals"]++;
+								$query = Array("id"=>$_SESSION['logged_user']['id'],
+											"concededgoals"=>$goal["concededgoals"]);
+								$_SESSION['logged_user']['concededgoals'] = $goal["concededgoals"];
+								$db->updateRow("users", $query);
 
 							}
 						}
