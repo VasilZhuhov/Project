@@ -131,6 +131,7 @@ html {
 	padding:2%;
 }
 @media screen and (max-width: 1000px) {
+
 	.gameButtons{
 		position:relative;
 		width:40%;
@@ -149,4 +150,71 @@ html {
 		padding-top:22%;
 		padding-bottom:9%;
 	}
+	.textIns{
+	text-align:center;
+	font-size:5vw;
+	padding:2%;
+}
+.insButton{
+	position:relative;
+	width:25%;
+	margin-left:37.5%;
+	padding-top:130%;
+	padding-bottom:7%;
+}
+.change{
+	font-size: 4vw;
+}
+.gamebg {
+    margin-top:10%;
+}
+}
+@media screen and (max-width: 1024px) {
+   
+.loginButtons{
+  margin-top:0.7%;
+  float:right;
+}
+}
+@media screen and (max-width: 767px) {
+
+.loginButtons{
+  width:50%;
+  margin-top: -8%;
+  float:right;
+  
+
+}
+}
+@media screen and (max-width: 600px) {
+
+.loginButtons{
+  width:50%;
+  margin-top: -11%;
+  float:right;
+  
+
+}
+}
+@media screen and (max-width: 450px) {
+
+.loginButtons{
+  width:50%;
+  margin-top: -13%;
+  margin-left: 5%;
+  float:right;
+  
+
+}
+}
+@media screen and (max-width: 380px) {
+
+.loginButtons{
+  width:50%;
+  margin-top: -15%;
+  margin-right: -10%;
+  float:right;
+  
+
+}
 }

@@ -330,6 +330,18 @@ float: left;
 		z-index: 26;
 
 	}
+	.rowText {
+	font-size:4.5vw;
+	text-align:center;
+	color:#ffffff;
+	}
+	.header1{
+	font-size:5.5vw;
+	text-align:center;
+	color:#ffffff;
+	text-shadow: 4px 4px 4px #000000;
+
+}
 
 
 }

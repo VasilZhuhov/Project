@@ -47,26 +47,10 @@
     <nav class="navbar  navbar-fixed-top navbar-default" role="navigation" >
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header ">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <?php
-                if(!isset($_SESSION['logged_user']))
-                {
-                    
-                        header('Location: index.php');
-                }
-                else
-                {
-                    echo "
-                       <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-                            <ul class='nav navbar-nav'>
+             <ul class='nav navbar-nav'>
+                            <li>
                                 <a class='navbar-brand navbar-brand-default' href='index.php'>F.A. League</a>
+                            </li>
                                 <li>
                                     <a href='game.php'>The Game</a>
                                 </li>
@@ -83,10 +67,13 @@
                                         </button>
                                     </a>
                                 </div>
-
-                        </div>
-                    ";
+            <?php
+                if(!isset($_SESSION['logged_user']))
+                {
+                    
+                        header('Location: index.php');
                 }
+                
             ?>
             </div>
 
