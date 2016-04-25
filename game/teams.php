@@ -30,7 +30,8 @@ $newMatch = $db->saveArray("matches", $query);
 $query = "SELECT id FROM matches ORDER BY id DESC LIMIT 1";
 $match_id = $db->fetchArray($query);
 $match_id = $match_id[0]["id"];
-
+$goalTeam1 = 0;
+$goalTeam2 = 0;
 $ballPos = ($team1[0][2]-$team2[0][2] + 50);
 
 $chanceCreated = (($team1[0][1]+$team1[0][2])-($team2[0][1]+$team2[0][2]))/2;
@@ -94,6 +95,7 @@ while($min <= 89)
 											"scoredgoals"=>$goal["scoredgoals"]);
 							$_SESSION['logged_user']['scoredgoals'] = $goal["scoredgoals"];
 							$db->updateRow("users", $query);
+							$goalTeam1++;
 						}
 					}
 				}
@@ -138,6 +140,8 @@ while($min <= 89)
 											"concededgoals"=>$goal["concededgoals"]);
 								$_SESSION['logged_user']['concededgoals'] = $goal["concededgoals"];
 								$db->updateRow("users", $query);
+								$goalTeam2++;
+
 
 							}
 						}
@@ -157,5 +161,32 @@ while($min <= 89)
 		$data["team_id"] = 0;
 		$newMin = $db->saveArray("minutes", $data);
 	}
+
+
 }
+if($goalTeam1>$goalTeam2)
+	{
+		$goal["wins"]++;
+		$query = Array("id"=>$_SESSION['logged_user']['id'],
+					"wins"=>$goal["wins"]);
+		$_SESSION['logged_user']['wins'] = $goal["wins"];
+		$db->updateRow("users", $query);
+
+	}
+	elseif($goalTeam1<$goalTeam2)
+	{
+		$goal["losses"]++;
+		$query = Array("id"=>$_SESSION['logged_user']['id'],
+					"losses"=>$goal["losses"]);
+		$_SESSION['logged_user']['losses'] = $goal["losses"];
+		$db->updateRow("users", $query);
+	}
+	else
+	{
+		$goal["draws"]++;
+		$query = Array("id"=>$_SESSION['logged_user']['id'],
+					"draws"=>$goal["draws"]);
+		$_SESSION['logged_user']['draws'] = $goal["draws"];
+		$db->updateRow("users", $query);		
+	}
 ?>

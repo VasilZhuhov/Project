@@ -109,9 +109,9 @@
                                <label>Losses</label>
                                <label>Draws</label>
                                <div class='stati'>
-                               <label>0</label>
-                               <label>0</label>
-                               <label>0</label>
+                               <label>".$_SESSION['logged_user']['wins']."</label>
+                               <label>".$_SESSION['logged_user']['losses']."</label>
+                               <label>".$_SESSION['logged_user']['draws']."</label>
                                </div>
                       </div>
                       <div class='wins'>
@@ -153,9 +153,9 @@
                                <label>Losses</label>
                                <label>Draws</label>
                                <div class='stati'>
-                               <label>0</label>
-                               <label>0</label>
-                               <label>0</label>
+                               <label>".$_SESSION['logged_user']['wins']."</label>
+                               <label>".$_SESSION['logged_user']['losses']."</label>
+                               <label>".$_SESSION['logged_user']['draws']."</label>
                                </div>
                       </div>
                       <div class='wins'>
@@ -198,9 +198,9 @@
                                <label>Losses</label>
                                <label>Draws</label>
                                <div class='stati'>
-                               <label>0</label>
-                               <label>0</label>
-                               <label>0</label>
+                               <label>".$_SESSION['logged_user']['wins']."</label>
+                               <label>".$_SESSION['logged_user']['losses']."</label>
+                               <label>".$_SESSION['logged_user']['draws']."</label>
                                </div>
                       </div>
                       <div class='wins'>
@@ -247,9 +247,9 @@
                                <label>Losses</label>
                                <label>Draws</label>
                                <div class='stati'>
-                               <label>0</label>
-                               <label>0</label>
-                               <label>0</label>
+                               <label>".$_SESSION['logged_user']['wins']."</label>
+                               <label>".$_SESSION['logged_user']['losses']."</label>
+                               <label>".$_SESSION['logged_user']['draws']."</label>
                                </div>
                       </div>
                       <div class='wins'>
