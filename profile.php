@@ -38,38 +38,17 @@
     <script src="js/login.js"></script>
 
     <!-- Navigation -->
-    <nav class="navbar  navbar-fixed-top navbar-default" role="navigation" >
+        <nav class="navbar  navbar-fixed-top navbar-default" role="navigation" >
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header ">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand navbar-brand-default"  href="index.php">F.A. League</a>
-            </div>
-            <?php
-                if(!isset($_SESSION['logged_user']))
-                {
-                    echo "
-                        <div class='loginButtons'>
-                            <img class='loginButtons' src='img/edit-icon.png' id='sign'>  
-                            <img class='loginButtons' src='img/login.png' id='log'>                     
-                        </div>
-                    ";
-                }
-                else
-                {
-                    echo "
-                       <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-                            <ul class='nav navbar-nav'>
+             <ul class='nav navbar-nav'>
+                            <li>
+                                <a class='navbar-brand navbar-brand-default' href='index.php'>F.A. League</a>
+                            </li>
                                 <li>
-                                    <a class='hover' href='game.php'>The Game</a>
+                                    <a href='game.php'>The Game</a>
                                 </li>
                                 </ul>
-                                    <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
                                 <div class='loginButtons'>
                                     <a href='php/logout.php'>
                                         <button type='button' class='btn btn-danger btn-sm'>
@@ -77,11 +56,15 @@
                                         </button>
                                     </a>
                                 </div>
-                        </div>
-
-                    ";
+            <?php
+                if(!isset($_SESSION['logged_user']))
+                {
+                    
+                        header('Location: index.php');
                 }
+                
             ?>
+            </div>
             </div>
         </div>
     </nav>
@@ -227,6 +210,54 @@
             echo "
             
                 <div class='profile_chelsea'>
+
+                    <img  src=".$_SESSION['logged_user']['avatar'].">
+                    <div class='names'>
+                   ".$_SESSION['logged_user']['first_name']."
+
+                    ".$_SESSION['logged_user']['second_name']."
+                    (".$_SESSION['logged_user']['username_sign'].")
+                     </div>
+
+                </div>   
+
+               
+                
+
+                   <div class='scoreboard'>
+                       <div class='wins WLD'>
+                               <label>Wins</label>
+                               <label>Losses</label>
+                               <label>Draws</label>
+                               <div class='stati'>
+                               <label>".$_SESSION['logged_user']['wins']."</label>
+                               <label>".$_SESSION['logged_user']['losses']."</label>
+                               <label>".$_SESSION['logged_user']['draws']."</label>
+                               </div>
+                      </div>
+                      <div class='wins'>
+                               <label>Goal Scored</label>
+                               <label>Goal Conceded</label>
+                      </div>         
+                      <div class='stat'>
+                               <label class='goal'>".$_SESSION['logged_user']['scoredgoals']."</label>
+                               <label class='conGoal'>".$_SESSION['logged_user']['concededgoals']."</label>  
+                       </div> 
+                        
+
+                   </div>
+
+
+
+
+                        ";
+          }
+
+          if($_SESSION['logged_user']['team'] == 'Leicester')
+          {
+            echo "
+            
+                <div class='profile_leicester'>
 
                     <img  src=".$_SESSION['logged_user']['avatar'].">
                     <div class='names'>

@@ -53,17 +53,17 @@ s
                 else
                 {
                     echo "
-                
-                        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-                            <ul class='nav navbar-nav'>
+             <ul class='nav navbar-nav'>
+                            <li>
                                 <a class='navbar-brand navbar-brand-default' href='index.php'>F.A. League</a>
+                            </li>
                                 <li>
                                     <a href='game.php'>The Game</a>
                                 </li>
                                 </ul>
-                                    <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
+                                 <span id='hello' href='#'>Hello, ".$_SESSION['logged_user']['username_sign']."</span>
                                 <div class='loginButtons'>
-                                <a href='profile.php'>
+                                    <a href='profile.php'>
                                         <button type='button' class='btn btn-danger btn-sm'>
                                             <span  class='glyphicon glyphicon-user'></span> Profile
                                         </button>
@@ -74,8 +74,8 @@ s
                                         </button>
                                     </a>
                                 </div>
-
-                        </div>
+                
+                        
 
                     ";
                 }
@@ -245,6 +245,7 @@ s
                         <option value="Liverpool" >Liverpool</option>
                         <option value="Man City" >Man City</option>
                         <option value="Chelsea" >Chelsea</option>
+                        <option value="Leicester" >Leicester</option>
                     </select>
                     <div class="white_space" >
                     <input class="validation" type="file" name="image">
