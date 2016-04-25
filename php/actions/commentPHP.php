@@ -111,7 +111,7 @@
 
 		if( $randPhrase < 16 )
 		{
-			$extr = "smashed the ball into the back of the net!";
+			$extr = "smashed it into the back of the net!";
 		}
 		elseif( $randPhrase < 36 )
 		{
